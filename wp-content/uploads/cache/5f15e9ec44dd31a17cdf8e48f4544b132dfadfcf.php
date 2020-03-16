@@ -3,6 +3,7 @@
 
   <?php if(!have_posts()): ?>
     <div class="alert alert-warning">
+      koukou
       <?php echo e(__('Sorry, no results were found.', 'sage')); ?>
 
     </div>
