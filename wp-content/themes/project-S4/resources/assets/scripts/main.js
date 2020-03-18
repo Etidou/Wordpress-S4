@@ -1,6 +1,8 @@
 // import external dependencies
 import 'jquery';
 
+import barba from '@barba/core';
+
 // Import everything from autoload
 import './autoload/**/*'
 
