@@ -4,17 +4,16 @@
   @include('partials.page-header')
 
 
-
 <body data-barba="wrapper">
   <!-- put here content that will not change
   between your pages, like <header> or <nav> -->
 
   <main data-barba="container" data-barba-namespace="home">
 
- <div class="wrap">
+  <div class="wrap">
       <img src="cupacake.png"/>
-      <a href="/"> Page 1 </a>
-      <a href="/second"> Page 2 </a>
+      <a href="/index"> Page 1 </a>
+      <a href="/"> Page 2 </a>
       <a href="/third"> Page 3 </a>
   </div>
 
@@ -23,6 +22,5 @@
   <!-- put here content that will not change
   between your pages, like <footer> -->
 </body>
-
 
 @endsection
