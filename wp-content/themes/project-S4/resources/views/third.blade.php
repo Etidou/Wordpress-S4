@@ -1,3 +1,11 @@
+<?php
+/**
+ * Template Name: third
+ */
+?>
+
+
+
 @extends('layouts.app')
 
 @section('content')
@@ -13,9 +21,9 @@
 
   <div class="wrap">
       <img src="@asset('images/third.png')">
-      <a href="/index"> Page 1 </a>
-      <a href="/second"> Page 2 </a>
-      <a href="/"> Page 3 </a>
+      <a href="index"> Page 1 </a>
+      <a href="second"> Page 2 </a>
+      <a href=""> Page 3 </a>
   </div>
 
   </main>
