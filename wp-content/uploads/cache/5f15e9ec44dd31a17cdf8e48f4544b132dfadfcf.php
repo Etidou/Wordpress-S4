@@ -1,21 +1,25 @@
 <?php $__env->startSection('content'); ?>
   <?php echo $__env->make('partials.page-header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
-  <?php if(!have_posts()): ?>
-    <div class="alert alert-warning">
-      koukou
-      <?php echo e(__('Sorry, no results were found.', 'sage')); ?>
+  
+<body data-barba="wrapper">
+  <!-- put here content that will not change
+  between your pages, like <header> or <nav> -->
 
-    </div>
-    <?php echo get_search_form(false); ?>
+  <main data-barba="container" data-barba-namespace="home">
 
-  <?php endif; ?>
+  <div class="wrap">
+     <img src="<?= App\asset_path('images/first.png'); ?>">
+      <a href="/"> Page 1 </a>
+      <a href="/second"> Page 2 </a>
+      <a href="/third"> Page 3 </a>
+  </div>
+<h1> red </h1>
+  </main>
 
-  <?php while(have_posts()): ?> <?php the_post() ?>
-    <?php echo $__env->make('partials.content-'.get_post_type(), array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-  <?php endwhile; ?>
-
-  <?php echo get_the_posts_navigation(); ?>
+  <!-- put here content that will not change
+  between your pages, like <footer> -->
+</body>
 
 <?php $__env->stopSection(); ?>
 
