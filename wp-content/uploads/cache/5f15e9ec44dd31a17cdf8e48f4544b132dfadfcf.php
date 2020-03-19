@@ -1,27 +1,21 @@
 <?php $__env->startSection('content'); ?>
   <?php echo $__env->make('partials.page-header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
+  <?php if(!have_posts()): ?>
+    <div class="alert alert-warning">
+      koukou
+      <?php echo e(__('Sorry, no results were found.', 'sage')); ?>
 
+    </div>
+    <?php echo get_search_form(false); ?>
 
-<body data-barba="wrapper">
-  <!-- put here content that will not change
-  between your pages, like <header> or <nav> -->
+  <?php endif; ?>
 
-  <main data-barba="container" data-barba-namespace="home">
+  <?php while(have_posts()): ?> <?php the_post() ?>
+    <?php echo $__env->make('partials.content-'.get_post_type(), array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  <?php endwhile; ?>
 
- <div class="wrap">
-      <img src="cupacake.png"/>
-      <a href="/"> Page 1 </a>
-      <a href="/second"> Page 2 </a>
-      <a href="/third"> Page 3 </a>
-  </div>
-
-  </main>
-
-  <!-- put here content that will not change
-  between your pages, like <footer> -->
-</body>
-
+  <?php echo get_the_posts_navigation(); ?>
 
 <?php $__env->stopSection(); ?>
 
