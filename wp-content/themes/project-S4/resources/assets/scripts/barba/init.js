@@ -1,88 +1,67 @@
-import Barba from '@barba/core';
+import barba from '@barba/core';
 
 export default function (routes) {
-  Barba.Pjax.Dom.wrapperId = 'barba-wrapper';
-  Barba.Pjax.Dom.containerClass = 'barba-container';
+// define a global hook
+barba.hooks.leave((data) => {
+  // this hook will be called for each transitions
+});
 
-  // Blacklist all WordPress Links (e.g. for adminbar)
-  function addBlacklistClass () {
-    $('a').each(function () {
-      if (this.href.indexOf('/wp-admin/') !== -1 ||
-          this.href.indexOf('/wp-login.php') !== -1) {
-        $(this).addClass('no-barba').addClass('wp-link');
-      }
-    });
-  }
+barba.init({
+  transitions: [{
 
-  // Set blacklist links
+    name: 'svg-circle',
+      leave(data) { 
 
-  addBlacklistClass();
+        // retrieve the current page url
+        const from = data.current.url;
+         routes.loadEvents();
+      },
+      enter({ next }) {
+        // retrieve the next page url (short syntax)
+        const to = next.url;
+      },
 
-  const HideShowTransition = Barba.BaseTransition.extend({
-    start: function () {
-      /**
-       * This function is automatically called as soon the Transition starts
-       * this.newContainerLoading is a Promise for the loading of the new container
-       */
+    // // basic style
+    // leave(data) {
+    //   // create your stunning leave animation here
+    // },
 
-      // As soon the loading is finished and the old page is faded out, let's fade the new page
-      Promise
-          .all([this.newContainerLoading, this.fadeOut()])
-          .then(this.fadeIn.bind(this));
-    },
+    // // async/await style
+    // async leave(data) {
+    //   await asyncAnimation(data.current.container);
+    // },
 
-    fadeOut: function () {
-      $('#transition-wrapper').addClass('transition');
-      return $(this.oldContainer).promise();
-    },
+    // // `this.async()` style
+    // leave(data) {
+    //   const done = this.async();
 
-    fadeIn: function () {
-      let timeout = window.setTimeout(() => {
-        window.pageYOffset = 0;
-        document.documentElement.scrollTop = 0;
-        document.body.scrollTop = 0;
+    //   callbackAnimation(data.current.container, {
+    //     onComplete: () => {
+    //       done();
+    //     },
+    //   });
+    // },
 
-        this.done();
-        // $('#body', this.newContainer).html($('#body', this.newContainer).html().replace(/http:\/\/conciergerie.localhost/g, 'http://localhost:3000'));
-        document.querySelector('#transition-wrapper').style.setProperty('--page-color', $('#body', this.newContainer).data('color'));
-        $('#transition-wrapper').removeClass('transition');
-        clearTimeout(timeout);
+    // // using a promise, returned with arrow function
+    // leave: (data) => asyncAnimation(data.current.container),
 
-      }, 1500);
+    // // es6 syntax: `{ current } = data.current`
+    // leave: ({ current }) => asyncAnimation(current.container),
 
-    },
-  });
+    // // using a promise
+    // leave: (data) => {
+    //   return new Promise(resolve => {
+    //     callbackAnimation(data.current.container, {
+    //       onComplete: () => {
+    //         resolve();
+    //       },
+    //     });
+    //   });
+    // }
+  }]
+});
 
-
-  Barba.Pjax.getTransition = () => {
-    return HideShowTransition;
-  };
-
-  // Fire Barba.js
-  Barba.Pjax.start();
-  Barba.Prefetch.init();
-
-
-  if (!$('body').hasClass('app')) {
-    $('body').attr('class', $('#body').attr('class'));
-    routes.loadEvents();
-  }
-
-  Barba.Dispatcher.on('transitionCompleted', function () {
-    // Set new classes from #af-classes to body
-    $('body').attr('class', $('#body').attr('class'));
-    // Fire routes after new content loaded
-    routes.loadEvents();
-  });
-
-  Barba.Dispatcher.on('initStateChange', function () {
-    // modify to your needs
-    const path = (window.location.href).replace(window.location.origin, '').toLowerCase();
-    window.gtag('js', new Date());
-    window.gtag('config', 'UA-131045553-1', {
-      'page_title': document.title,
-      'page_path': path,
-    });
-  });
 
 }
+
+  
