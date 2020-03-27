@@ -7,7 +7,7 @@ import 'jquery';
 import './autoload/**/*'
 
 
-import barbaInit from './barba/init';
+
 
 
 
@@ -27,10 +27,10 @@ const routes = new Router({
   aboutUs,
 
 });
-
+import barbaInit from './routes/common';
 // Load Events
 jQuery(document).ready(() => {
-      //routes.loadEvents() is now called after Barba transition;
+ // routes.loadEvents());
       barbaInit(routes);
     }
 );
