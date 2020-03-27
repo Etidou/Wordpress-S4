@@ -11,7 +11,14 @@
 <?php echo $__env->make('partials.page-header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
 
-<body data-barba="wrapper">
+<nav class="nav-primary">
+<?php if(has_nav_menu('primary_navigation')): ?>
+<?php echo wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']); ?>
+
+<?php endif; ?>
+</nav>
+
+<!-- <body data-barba="wrapper"> -->
   <!-- put here content that will not change
     between your pages, like <header> or <nav> -->
 
@@ -52,11 +59,11 @@
 <!-- put here content that will not change
   between your pages, like <footer> -->
 
-    <script src="https://unpkg.com/@barba/core@2.9.7/dist/barba.umd.js"> </script>
+<!--     <script src="https://unpkg.com/@barba/core@2.9.7/dist/barba.umd.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"> </script>
-    <script src="index.js"> </script>
+    <script src="index.js"> </script> -->
 
-  </body>
+<!--   </body> -->
 
   <?php $__env->stopSection(); ?>
 

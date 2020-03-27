@@ -11,6 +11,8 @@
 @include('partials.page-header')
 
 
+
+
 <!-- <body data-barba="wrapper"> -->
   <!-- put here content that will not change
     between your pages, like <header> or <nav> -->
@@ -27,6 +29,11 @@
 
       <div class="wrapper">
         <header>
+          <nav class="nav-primary">
+@if (has_nav_menu('primary_navigation'))
+{!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
+@endif
+</nav>
           <nav>
             <ul>
               <li> <a href="index"> Page 1 </a></li>
@@ -53,7 +60,7 @@
 <!--     <script src="https://unpkg.com/@barba/core"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"> </script>
     <script src="index.js"> </script> -->
-<!-- 
-  </body> -->
+
+<!--   </body> -->
 
   @endsection

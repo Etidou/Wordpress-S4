@@ -18,7 +18,7 @@ module.exports = {
       'objectLiteralDuplicateProperties': false,
       'experimentalObjectRestSpread': true,
     },
-    'ecmaVersion': 2017,
+    'ecmaVersion': 2018,
     'sourceType': 'module',
   },
   'plugins': [

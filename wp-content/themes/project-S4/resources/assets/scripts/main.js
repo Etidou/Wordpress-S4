@@ -1,5 +1,5 @@
 // import external dependencies
-import 'jquery';
+import $ from 'jquery';
 
 
 
@@ -8,7 +8,7 @@ import './autoload/**/*'
 
 
 
-
+// import barba from './routes/common';
 
 
 // import local dependencies
@@ -27,10 +27,9 @@ const routes = new Router({
   aboutUs,
 
 });
-import barbaInit from './routes/common';
+
 // Load Events
-jQuery(document).ready(() => {
- // routes.loadEvents());
-      barbaInit(routes);
-    }
-);
+$(document).ready(() => routes.loadEvents());
+//       { barba(routes);
+//     }
+// );
