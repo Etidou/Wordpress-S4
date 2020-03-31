@@ -5,6 +5,15 @@
 ?>
 
 
+      <ul class="transition">
+
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
 
 
 <?php $__env->startSection('content'); ?>
@@ -18,29 +27,10 @@
     between your pages, like <header> or <nav> -->
 
 
-      <ul class="transition">
 
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
 
       <div class="wrapper">
         <header>
-          <nav class="nav-primary">
-<?php if(has_nav_menu('primary_navigation')): ?>
-<?php echo wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']); ?>
-
-<?php endif; ?>
-</nav>
-          <nav>
-            <ul>
-              <li> <a href="index"> Page 1 </a></li>
-              <li><a href=""> Page 2 </a></li>
-            </ul>
-          </nav>
         </header>
         <main data-barba="container" data-barba-namespace="second">
           <div class="left">

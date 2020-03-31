@@ -80,6 +80,7 @@
     "bootstrap": "v4.3.1",
     "gsap": "^3.2.6",
     "jquery": "^3.3.1",
+    "kursor": "^0.1.6",
     "popper.js": "^1.14.7"
   }
 }

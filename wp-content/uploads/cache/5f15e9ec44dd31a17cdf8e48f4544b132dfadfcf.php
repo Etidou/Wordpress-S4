@@ -4,25 +4,6 @@
  */
 ?>
 
-
-
-
-<?php $__env->startSection('content'); ?>
-<?php echo $__env->make('partials.page-header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-
-
-<nav class="nav-primary">
-<?php if(has_nav_menu('primary_navigation')): ?>
-<?php echo wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']); ?>
-
-<?php endif; ?>
-</nav>
-
-<!-- <body data-barba="wrapper"> -->
-  <!-- put here content that will not change
-    between your pages, like <header> or <nav> -->
-
-
       <ul class="transition">
 
         <li></li>
@@ -32,16 +13,48 @@
         <li></li>
       </ul>
 
+
+
+<?php $__env->startSection('content'); ?>
+<?php echo $__env->make('partials.page-header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<!-- 
+<nav class="nav-primary">
+<?php if(has_nav_menu('primary_navigation')): ?>
+<?php echo wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']); ?>
+
+<?php endif; ?>
+</nav> -->
+
+<body>
+
+
+
       <div class="wrapper">
         <header>
-          <nav>
-            <ul>
-              <li> <a href=""> Page 1 </a></li>
-              <li><a href="second"> Page 2 </a></li>
-            </ul>
-          </nav>
         </header>
-        <main data-barba="container" data-barba-namespace="home">
+        <main data-barba="container" data-barba-namespace="home"><div class="cm-header-menu">
+
+        <div class="menu-deco">
+            <div class="menu-deco-line">
+                <div class="menu-deco-point-isTopLeft"></div>
+                <div class="menu-deco-point-isTop"></div>
+                <div class="menu-deco-point-isTopRight"></div>
+            </div>
+
+            <div class="menu-deco-line">
+                <div class="menu-deco-point-isMiddleLeft"></div>
+                <div class="menu-deco-point-isMiddle"></div>
+                <div class="menu-deco-point-isMiddleRight"></div>
+            </div>
+
+            <div class="menu-deco-line">
+                <div class="menu-deco-point-isBottomLeft"></div>
+                <div class="menu-deco-point-isBottom"></div>
+                <div class="menu-deco-point-isBottomRight"></div>
+            </div>
+        </div>
+    </div> 
           <div class="left">
             <h1> red </h1>
             <a href="second" class="cta"> Page 2 </a>
@@ -53,17 +66,9 @@
 
 
 
+</body>
 
 
-
-<!-- put here content that will not change
-  between your pages, like <footer> -->
-
-<!--     <script src="https://unpkg.com/@barba/core@2.9.7/dist/barba.umd.js"> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"> </script>
-    <script src="index.js"> </script> -->
-
-<!--   </body> -->
 
   <?php $__env->stopSection(); ?>
 

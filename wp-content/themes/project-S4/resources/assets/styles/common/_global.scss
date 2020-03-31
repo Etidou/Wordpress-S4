@@ -1,3 +1,8 @@
+body 
+{
+	background-color: blue;
+}
+
 h1
 {
 	font-size: 3em;
@@ -11,6 +16,7 @@ html
 	font-family: 'Montserrat';
 	height: 100vh;
 	background: rgb(240,240,240);
+	
 }
 
 .wrapper {
@@ -45,24 +51,6 @@ img {
 	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
-ul.transition {
-	display: flex;
-	position: absolute;
-	z-index: 10;
-	height: 100vh;
-	width: 100%;
-	top: 0;
-	left: 0;
-	margin: 0;
-	pointer-events:none;
-}
-
-ul.transition li{
-	width: 20%;
-	background:white;
-	transform: scaleY(0);
-}
-
 @media (min-width: 650px)
 {
 	main {
@@ -85,6 +73,10 @@ ul.transition li{
 		width: 400px;
 	}
 
+	img:hover {
+		width: 1400px;
+	}
+
 	.cta {
 		padding: 1em;
 		background: white;
@@ -94,3 +86,53 @@ ul.transition li{
 		animation-fill-mode:initial;
 	}
 }
+
+
+.menu-deco {
+	position: relative;
+	height: 32px;
+	width: 32px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+
+	.menu-deco-line {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.menu-deco-point-isTopLeft,.menu-deco-point-isTop,.menu-deco-point-isTopRight,.menu-deco-point-isMiddleLeft,.menu-deco-point-isMiddle,.menu-deco-point-isMiddleRight,.menu-deco-point-isBottomLeft,.menu-deco-point-isBottom,.menu-deco-point-isBottomRight {
+		width: 5px;
+		height: 5px;
+		background-color: #fff;
+		border-radius: 50%;
+		transition: .2s background-color ease-in-out, .2s transform ease-in-out;
+	}
+
+
+.menu-deco:hover {
+
+        .menu-deco-point-isTop{
+        	transform: translate(-7px, 7px);
+        	background-color: blue;
+        }
+
+
+        .menu-deco-point-isMiddleLeft {
+        	transform: translate(7px, 7px);
+        	background-color: blue;
+        }
+        .menu-deco-point-isMiddleRight {
+        	transform: translate(-7px, -7px);
+        	background-color: blue;
+        }
+        .menu-deco-point-isBottom {
+        	transform: translate(7px, -7px);
+        	background-color: blue;
+        }
+
+       }

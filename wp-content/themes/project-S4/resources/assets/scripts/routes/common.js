@@ -1,5 +1,9 @@
+// import $ from 'jquery';
 import gsap  from 'gsap';
 import barba from '@barba/core';
+import kursor from 'kursor';
+
+
 
 export default {
   init() {
@@ -7,10 +11,9 @@ export default {
 
     function pageTransition() {
 
-	var tl = gsap.timeline();
-
-	tl.to('ul.transition li', { duration: .5, scaleY: 1, transformOrigin: 'bottom left', stagger: .2})
-	tl.to('ul.transition li', { duration: .5, scaleY: 0, transformOrigin: 'bottom left', stagger: .1,delay: .1})
+	var tl = gsap.timeline();	
+	tl.to('ul.transition li', { duration: .5, scaleY: 1, transformOrigin: 'bottom left', stagger: .05})
+	tl.to('ul.transition li', { duration: .5, scaleY: 0, transformOrigin: 'bottom left', stagger: .05,delay: .1})
 }
 
 
@@ -61,6 +64,12 @@ barba.init ({
 		},
 	}],
 })
+new kursor({
+            type: 4,
+            removeDefaultCursor: true,
+            color:'#476582',
+        })
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
