@@ -1,4 +1,4 @@
-// import $ from 'jquery';
+import $ from 'jquery';
 import gsap  from 'gsap';
 import barba from '@barba/core';
 import kursor from 'kursor';
@@ -9,7 +9,13 @@ export default {
   init() {
     // JavaScript to be fired on all pages
 
-    function pageTransition() {
+
+$('.ep-menu-deco').click(function(){
+    $('.ep-menu-deco').toggleClass('open');
+    $('.ep-menu').toggleClass('open');
+});
+
+    function pageTransition() { 
 
 	var tl = gsap.timeline();	
 	tl.to('ul.transition li', { duration: .5, scaleY: 1, transformOrigin: 'bottom left', stagger: .05})
@@ -34,6 +40,7 @@ function contentAnimation() {
 	var tl = gsap.timeline();
 	tl.from('.left', {duration: 1.5, translateY: 50, opacity: 0})
 	tl.to('img', {clipPath:'polygon(0 0, 100% 0, 100% 100%, 0 100%)'})
+	
 
 }
 

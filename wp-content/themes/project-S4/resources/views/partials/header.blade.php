@@ -1,10 +1,41 @@
 <header class="banner">
-  <div class="container">
-    <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
-    <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-    </nav>
-  </div>
+
+	<div class="ep-header ep-header-wrapper">
+		
+		<div class="menu-text">
+			<span> Menu </span>
+			<span> Fermer </span>
+		</div>
+
+		<div class="ep-menu-deco">
+			<div class="ep-menu-deco-line">
+				<div class="menu-deco-point-isTopLeft"></div>
+				<div class="menu-deco-point-isTop"></div>
+				<div class="menu-deco-point-isTopRight"></div>
+			</div>
+
+			<div class="ep-menu-deco-line">
+				<div class="menu-deco-point-isMiddleLeft"></div>
+				<div class="menu-deco-point-isMiddle"></div>
+				<div class="menu-deco-point-isMiddleRight"></div>
+			</div>
+
+			<div class="ep-menu-deco-line">
+				<div class="menu-deco-point-isBottomLeft"></div>
+				<div class="menu-deco-point-isBottom"></div>
+				<div class="menu-deco-point-isBottomRight"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="ep-menu">
+		<div class="ep-menu-left">
+			amzdjoizjdoilmzd
+		</div>
+		<div class="ep-menu-right">
+			zaoidaizhdialzdhl
+		</div>
+	</div>
+
 </header>
