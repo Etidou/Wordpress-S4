@@ -77,16 +77,13 @@ barba.init ({
 		},
 	}],
 })
-new kursor({
-            type: 4,
-            removeDefaultCursor: true,
-            color:'#476582',
-        })
 
 
+
+// $('p').mouseover(function() {
+// console.log('hover');
 
 ;(function(){
-
 var msg = 'SUNFLOWER';
 
 // Set font's style size for calculating dimensions
@@ -216,6 +213,16 @@ window.attachEvent('onload', init);
 document.attachEvent('onmousemove', mouse);
 }
 })();
+// })
+
+
+
+new kursor({
+            type: 4,
+            removeDefaultCursor: true,
+            color:'#53D7FF',
+        })
+
 
 
   },

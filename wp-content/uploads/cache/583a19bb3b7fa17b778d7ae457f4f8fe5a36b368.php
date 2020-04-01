@@ -37,13 +37,7 @@
 
     <main data-barba="container" data-barba-namespace="realisations">
 
-        <div class="tooltipe">
-    <span class="dot"></span>
-    <div class="content_hover">
-      <h1>Tooltip heading</h1>
-      <p>Some random text blah blah...</p>
-    </div>
-</div>
+   <p> Hover me </p>
 
   </main>
 </div>
