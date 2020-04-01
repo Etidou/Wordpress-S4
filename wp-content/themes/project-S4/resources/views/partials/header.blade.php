@@ -30,12 +30,29 @@
 
 
 	<div class="ep-menu">
-		<div class="ep-menu-left">
-			amzdjoizjdoilmzd
-		</div>
-		<div class="ep-menu-right">
-			zaoidaizhdialzdhl
+		<div class="menu-container menu-wrapper">
+			<div class="ep-menu-left">
+				<nav>
+					<ul>
+						<li><a class="link-menu" href="http://localhost/Wordpress-S4/realisations/">Réalisations</a></li>
+						<li><a class="link-menu" href="http://localhost/Wordpress-S4/index/">A propos</a></li>
+						<li><a class="link-menu" href="http://localhost/Wordpress-S4/contact/">Contact</a></li>
+					</ul>
+
+
+				</nav>
+
+			</div>
+			<div class="ep-menu-right">
+				zaoidaizhdialzdhl
+			</div>
 		</div>
 	</div>
+
+
+
+
+
+
 
 </header>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Index
+ * Template Name: Réalisations
  */
 ?>
 
@@ -34,15 +34,9 @@
 
   <div class="wrapper">
 
-    <main data-barba="container" data-barba-namespace="home">
+    <main data-barba="container" data-barba-namespace="realisations">
 
-
-
-    <div class="left">
-      <h1> red </h1>
-      <a href="/second" class="cta"> Page 2 </a>
-    </div>
-    <img src="@asset('images/first.png')">
+   
 
   </main>
 </div>
