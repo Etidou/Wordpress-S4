@@ -76,14 +76,15 @@ barba.init ({
 			console.log(data);
 		},
 	}],
-})
+});
 
 
 
 // $('p').mouseover(function() {
 // console.log('hover');
 
-;(function(){
+// $('p').mouseover
+(function(){
 var msg = 'SUNFLOWER';
 
 // Set font's style size for calculating dimensions
@@ -213,7 +214,6 @@ window.attachEvent('onload', init);
 document.attachEvent('onmousemove', mouse);
 }
 })();
-// })
 
 
 
