@@ -13,7 +13,7 @@
   <li></li>
 </ul>
 
-<!-- @extends('layouts.app') -->
+@extends('layouts.app')
 
 @section('content')
 
@@ -24,13 +24,7 @@
 @endif
 </nav> -->
 
-<body>
 
-    <header>
-      <?php
-  get_header();
-?>
-    </header>
 
   <div class="wrapper">
 
@@ -43,7 +37,7 @@
 
 
 
-</body>
+
 
 
 

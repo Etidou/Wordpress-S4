@@ -13,7 +13,7 @@
   <li></li>
 </ul>
 
-<!--  -->
+
 
 <?php $__env->startSection('content'); ?>
 
@@ -25,13 +25,7 @@
 <?php endif; ?>
 </nav> -->
 
-<body>
 
-    <header>
-      <?php
-  get_header();
-?>
-    </header>
 
   <div class="wrapper">
 
@@ -44,7 +38,7 @@
 
 
 
-</body>
+
 
 
 

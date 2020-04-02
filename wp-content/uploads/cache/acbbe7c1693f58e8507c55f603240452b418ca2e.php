@@ -2,11 +2,6 @@
 
 	<div class="ep-header ep-header-wrapper">
 		
-		<div class="menu-text">
-			<span> Menu </span>
-			<span> Fermer </span>
-		</div>
-
 		<div class="ep-menu-deco">
 			<div class="ep-menu-deco-line">
 				<div class="menu-deco-point-isTopLeft"></div>
@@ -34,9 +29,9 @@
 			<div class="ep-menu-left">
 				<nav>
 					<ul>
-						<li><a class="link-menu" href="get_the_title(realisations)">Réalisations</a></li>
-						<li><a class="link-menu" href="get_the_title(index)">A propos</a></li>
-						<li><a class="link-menu" href="get_the_title(contact)">Contact</a></li>
+						<li><a class="link-menu" href="<?php echo e(get_permalink( get_page_by_title( 'realisations' ))); ?>">Réalisations</a></li>
+						<li><a class="link-menu" href="<?php echo e(get_permalink( get_page_by_title( 'index' ))); ?>">A propos</a></li>
+						<li><a class="link-menu" href="<?php echo e(get_permalink( get_page_by_title( 'contact' ))); ?>">Contact</a></li>
 					</ul>
 
 

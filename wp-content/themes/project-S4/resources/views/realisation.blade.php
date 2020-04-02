@@ -13,7 +13,7 @@
   <li></li>
 </ul>
 
-<!-- @extends('layouts.app') -->
+@extends('layouts.app')
 
 @section('content')
 
@@ -24,13 +24,9 @@
 @endif
 </nav> -->
 
-<body>
 
-    <header>
-      <?php
-  get_header();
-?>
-    </header>
+
+
 
   <div class="wrapper">
 
@@ -38,62 +34,62 @@
 
 <nav class="menu">
       <div class="menu__item">
-        <a class="menu__item-link">Showreel</a>
-        <img class="menu__item-img" src="img/1.jpg" alt="Some image"/>
+        <a class="menu__item-link">League</a>
+        <img class="menu__item-img" src="@asset('images/1.jpg')" alt="Some image"/>
         <div class="marquee">
           <div class="marquee__inner" aria-hidden="true">
-            <span>Showreel</span>
-            <span>Showreel</span>
-            <span>Showreel</span>
-            <span>Showreel</span>
+            <span>League</span>
+            <span>League</span>
+            <span>League</span>
+            <span>League</span>
           </div>
         </div>
       </div>
       <div class="menu__item">
-        <a class="menu__item-link">Case Studies</a>
-        <img class="menu__item-img" src="img/2.jpg" alt="Some image"/>
+        <a class="menu__item-link">Wordpress</a>
+        <img class="menu__item-img" src="@asset('images/2.jpg')" alt="Some image"/>
         <div class="marquee">
           <div class="marquee__inner" aria-hidden="true">
-            <span>Case Studies</span>
-            <span>Case Studies</span>
-            <span>Case Studies</span>
-            <span>Case Studies</span>
+            <span>Wordpress</span>
+            <span>Wordpress</span>
+            <span>Wordpress</span>
+            <span>Wordpress</span>
           </div>
         </div>
       </div>
       <div class="menu__item">
-        <a class="menu__item-link">Experiments</a>
-        <img class="menu__item-img" src="img/3.jpg" alt="Some image"/>
+        <a class="menu__item-link">API Node</a>
+        <img class="menu__item-img" src="@asset('images/3.jpg')" alt="Some image"/>
         <div class="marquee">
           <div class="marquee__inner" aria-hidden="true">
-            <span>Experiments</span>
-            <span>Experiments</span>
-            <span>Experiments</span>
-            <span>Experiments</span>
+            <span>API Node</span>
+            <span>API Node</span>
+            <span>API Node</span>
+            <span>API Node</span>
           </div>
         </div>
       </div>
       <div class="menu__item">
-        <a class="menu__item-link">Our Crew</a>
-        <img class="menu__item-img" src="img/4.jpg" alt="Some image"/>
+        <a class="menu__item-link">Karnish</a>
+        <img class="menu__item-img" src="@asset('images/4.jpg')" alt="Some image"/>
         <div class="marquee">
           <div class="marquee__inner" aria-hidden="true">
-            <span>The Crew</span>
-            <span>The Crew</span>
-            <span>The Crew</span>
-            <span>The Crew</span>
+            <span>Karnish</span>
+            <span>Karnish</span>
+            <span>Karnish</span>
+            <span>Karnish</span>
           </div>
         </div>
       </div>
       <div class="menu__item">
-        <a class="menu__item-link">Contact</a>
-        <img class="menu__item-img" src="img/5.jpg" alt="Some image"/>
+        <a class="menu__item-link">Luciol</a>
+        <img class="menu__item-img" src="@asset('images/5.jpg')" alt="Some image"/>
         <div class="marquee">
           <div class="marquee__inner" aria-hidden="true">
-            <span>Contact</span>
-            <span>Contact</span>
-            <span>Contact</span>
-            <span>Contact</span>
+            <span>Luciol</span>
+            <span>Luciol</span>
+            <span>Luciol</span>
+            <span>Luciol</span>
           </div>
         </div>
       </div>
@@ -104,7 +100,7 @@
 
 
 
-</body>
+
 
 
 
