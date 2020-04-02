@@ -94,6 +94,31 @@
           </div>
         </div>
       </div>
+       <div class="menu__item">
+        <a class="menu__item-link">Laravel</a>
+        <img class="menu__item-img" src="@asset('images/5.jpg')" alt="Some image"/>
+        <div class="marquee">
+          <div class="marquee__inner" aria-hidden="true">
+            <span>Laravel</span>
+            <span>Laravel</span>
+            <span>Laravel</span>
+            <span>Laravel</span>
+          </div>
+        </div>
+      </div>
+
+       <div class="menu__item">
+        <a class="menu__item-link">L'essaim naturel</a>
+        <img class="menu__item-img" src="@asset('images/5.jpg')" alt="Some image"/>
+        <div class="marquee">
+          <div class="marquee__inner" aria-hidden="true">
+            <span>L'essaim naturel</span>
+            <span>L'essaim naturel</span>
+            <span>L'essaim naturel</span>
+            <span>L'essaim naturel</span>
+          </div>
+        </div>
+      </div>
     </div>
     </nav>
 

@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import gsap  from 'gsap';
 import barba from '@barba/core';
-// import kursor from 'kursor';
+import kursor from 'kursor';
 
 
 
@@ -15,9 +15,10 @@ $('.ep-menu-deco').click(function(){
     $('.ep-menu').toggleClass('open');
     $('.menu-wrapper').toggleClass('open');
 
-    var tl = gsap.timeline();
-    tl.from('.aleft', {duration: 1.5, translateY: 50, opacity: 0})
-
+    // tlmenu.repeat(-1);
+var tlmenu = gsap.timeline();
+    tlmenu.to('a.link-menu', { duration: 1, translateY: 50, transformOrigin: 'bottom', stagger: .15})
+    tlmenu.to('a.link-menu', { duration: 1, translateY: -10, transformOrigin: 'bottom', stagger: .25,delay: .15})
 });
 
 
@@ -30,16 +31,6 @@ $('a.link-menu').click(function(){
 
 	
 });
-
-
-$('menu__item-link').hover(function(){
-
-
-	var tl = gsap.timeline();
-	tl.to('img', {clipPath:'polygon(0 0, 100% 0, 100% 100%, 0 100%)'})
-	console.log('yes');
-});
-
 
 
 
@@ -67,10 +58,10 @@ function contentAnimation() {
 
 	var tl = gsap.timeline();
 
-	tl.from('.bleft', {duration: 0.5, translateY: 50, opacity: 0, stagger: .05})
+	tl.from('.bleft', {duration: 2.5, translateY: 50, opacity: 0, stagger: .05})
 
-	tl.from('.left', {duration: 1.5, translateY: 50, opacity: 0})
-	tl.to('img', {clipPath:'polygon(0 0, 100% 0, 100% 100%, 0 100%)'})
+	// tl.from('.left', {duration: 1.5, translateY: 50, opacity: 0})
+	// tl.to('img', {clipPath:'polygon(0 0, 100% 0, 100% 100%, 0 100%)'})
 	
 }
 
@@ -104,11 +95,11 @@ barba.init ({
 
 
 
-// new kursor({
-//             type: 4,
-//             removeDefaultCursor: true,
-//             color:'#ff0000',
-//         })
+new kursor({
+            type: 4,
+            removeDefaultCursor: true,
+            color:'#ff0000',
+        })
 
 
 
