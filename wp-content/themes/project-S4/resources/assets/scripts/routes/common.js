@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import gsap  from 'gsap';
 import barba from '@barba/core';
-import kursor from 'kursor';
+// import kursor from 'kursor';
 
 
 
@@ -14,12 +14,34 @@ $('.ep-menu-deco').click(function(){
     $('.ep-menu-deco').toggleClass('open');
     $('.ep-menu').toggleClass('open');
     $('.menu-wrapper').toggleClass('open');
+
+    var tl = gsap.timeline();
+    tl.from('.aleft', {duration: 1.5, translateY: 50, opacity: 0})
+
 });
+
+
+
+
 
 $('a.link-menu').click(function(){
     $('.ep-menu-deco').toggleClass('open');
     $('.ep-menu').toggleClass('open');
+
+	
 });
+
+
+$('menu__item-link').hover(function(){
+
+
+	var tl = gsap.timeline();
+	tl.to('img', {clipPath:'polygon(0 0, 100% 0, 100% 100%, 0 100%)'})
+	console.log('yes');
+});
+
+
+
 
     function pageTransition() { 
 
@@ -44,10 +66,12 @@ function delay(n) {
 function contentAnimation() {
 
 	var tl = gsap.timeline();
+
+	tl.from('.bleft', {duration: 0.5, translateY: 50, opacity: 0, stagger: .05})
+
 	tl.from('.left', {duration: 1.5, translateY: 50, opacity: 0})
 	tl.to('img', {clipPath:'polygon(0 0, 100% 0, 100% 100%, 0 100%)'})
 	
-
 }
 
 
@@ -80,11 +104,12 @@ barba.init ({
 
 
 
-new kursor({
-            type: 4,
-            removeDefaultCursor: true,
-            color:'#ff0000',
-        })
+// new kursor({
+//             type: 4,
+//             removeDefaultCursor: true,
+//             color:'#ff0000',
+//         })
+
 
 
 

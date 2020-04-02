@@ -29,9 +29,22 @@
 			<div class="ep-menu-left">
 				<nav>
 					<ul>
-						<li><a class="link-menu" href="<?php echo e(get_permalink( get_page_by_title( 'realisations' ))); ?>">Réalisations</a></li>
-						<li><a class="link-menu" href="<?php echo e(get_permalink( get_page_by_title( 'index' ))); ?>">A propos</a></li>
-						<li><a class="link-menu" href="<?php echo e(get_permalink( get_page_by_title( 'contact' ))); ?>">Contact</a></li>
+						<li>
+							<div class="aleft">
+							<a class="link-menu" href="<?php echo e(get_permalink( get_page_by_title( 'realisations' ))); ?>">Réalisations</a>
+						</div>
+					</li>
+						<li>
+							<div class="aleft">
+							<a class="link-menu" href="<?php echo e(get_permalink( get_page_by_title( 'index' ))); ?>">A propos</a>
+						</div>
+					</li>
+						<li>
+							<div class="aleft">
+							<a class="link-menu" href="<?php echo e(get_permalink( get_page_by_title( 'contact' ))); ?>">Contact</a>
+						</div>
+					</li>
+
 					</ul>
 
 

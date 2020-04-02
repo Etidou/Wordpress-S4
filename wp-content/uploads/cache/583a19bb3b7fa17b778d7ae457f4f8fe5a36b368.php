@@ -34,6 +34,7 @@
     <main data-barba="container" data-barba-namespace="realisations">
 
 <nav class="menu">
+  <div class="bleft">
       <div class="menu__item">
         <a class="menu__item-link">League</a>
         <img class="menu__item-img" src="<?= App\asset_path('images/1.jpg'); ?>" alt="Some image"/>
@@ -94,6 +95,7 @@
           </div>
         </div>
       </div>
+    </div>
     </nav>
 
   </main>
