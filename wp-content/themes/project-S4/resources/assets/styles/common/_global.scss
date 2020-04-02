@@ -127,10 +127,10 @@ body {
 
 main::before {
 	animation: grain 8s steps(10) infinite;
-	background-image: url(../images/noise.png);
+	background-image: url(images/noise.png);
 	content: '';
 	left: -50%;
-	
+
 }
 
 @keyframes grain {

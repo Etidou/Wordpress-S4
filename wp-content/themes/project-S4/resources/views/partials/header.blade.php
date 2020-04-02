@@ -34,9 +34,9 @@
 			<div class="ep-menu-left">
 				<nav>
 					<ul>
-						<li><a class="link-menu" href="http://localhost/Wordpress-S4/realisations/">Réalisations</a></li>
-						<li><a class="link-menu" href="http://localhost/Wordpress-S4/index/">A propos</a></li>
-						<li><a class="link-menu" href="http://localhost/Wordpress-S4/contact/">Contact</a></li>
+						<li><a class="link-menu" href="get_the_title(realisations)">Réalisations</a></li>
+						<li><a class="link-menu" href="get_the_title(index)">A propos</a></li>
+						<li><a class="link-menu" href="get_the_title(contact)">Contact</a></li>
 					</ul>
 
 
