@@ -15,10 +15,13 @@ $('.ep-menu-deco').click(function(){
     $('.ep-menu').toggleClass('open');
     $('.menu-wrapper').toggleClass('open');
 
-    // tlmenu.repeat(-1);
+
 var tlmenu = gsap.timeline();
-    tlmenu.to('a.link-menu', { duration: 1, translateY: 50, transformOrigin: 'bottom', stagger: .15})
-    tlmenu.to('a.link-menu', { duration: 1, translateY: -10, transformOrigin: 'bottom', stagger: .25,delay: .15})
+    tlmenu.from('a.link-menu', { duration: 1, translateY: 50})
+    tlmenu.to('a.link-menu', { duration: 1, translateY: 0})
+
+
+    
 });
 
 

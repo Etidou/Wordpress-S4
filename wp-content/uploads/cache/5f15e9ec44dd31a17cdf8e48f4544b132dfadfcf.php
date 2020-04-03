@@ -40,6 +40,8 @@
     </div>
     <img src="<?= App\asset_path('images/first.png'); ?>">
 
+    <?php var_dump($args); ?>
+
   </main>
 </div>
 

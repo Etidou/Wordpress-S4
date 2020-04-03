@@ -39,6 +39,8 @@
     </div>
     <img src="@asset('images/first.png')">
 
+    <?php var_dump($args); ?>
+
   </main>
 </div>
 
