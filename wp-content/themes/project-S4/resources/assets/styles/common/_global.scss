@@ -80,7 +80,7 @@ img {
 		}
 
 		img {
-			width: 400px;
+			width: 300px;
 		}
 
 
@@ -348,3 +348,83 @@ a:focus {
 div#page {
 	display: none;
 }
+
+
+
+.preload-overlay {
+    background-color: $color-bg;
+    height: 100vh;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9000;
+
+    .container {
+        align-items: center;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        z-index: 3;
+
+        img {
+            width: 200px;
+            margin-bottom: 30px;
+        }
+
+        div {
+            height: 40px;
+            overflow: hidden;
+        }
+
+        span {
+            display: inline-block;
+            font-family: 'Roboto';
+            font-size: 30px;
+            line-height: 40px;
+            position: relative;
+            transform: translateY(100%);
+        }
+
+        & span:nth-child(3) {
+            font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .preload-overlay {
+    
+        .container {
+    
+            img {
+                width: 100px;
+                margin-bottom: 30px;
+            }
+    
+            div {
+                display: inline-block;
+                height: 31px;
+                overflow: hidden;
+                text-align: center;
+                width: 100%;
+
+            }
+    
+            span {
+                font-size: 17px;
+            }
+
+            #feature {
+                display: none;
+            }
+    
+        }
+    }
+}
+
+
+

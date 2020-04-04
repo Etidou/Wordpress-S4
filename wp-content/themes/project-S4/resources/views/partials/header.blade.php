@@ -24,39 +24,48 @@
 	</div>
 
 
-	<div class="ep-menu">
-		<div class="menu-container menu-wrapper">
-			<div class="ep-menu-left">
-				<nav>
-					<ul>
-						<li>
-							<div class="aleft">
-							<a class="link-menu" href="{{get_permalink( get_page_by_title( 'realisations' ))}}">Réalisations</a>
-						</div>
-					</li>
-						<li>
-							<div class="aleft">
-							<a class="link-menu" href="{{get_permalink( get_page_by_title( 'index' ))}}">A propos</a>
-						</div>
-					</li>
-						<li>
-							<div class="aleft">
-							<a class="link-menu" href="{{get_permalink( get_page_by_title( 'contact' ))}}">Contact</a>
-						</div>
-					</li>
+<div class="ep-menu open">
 
-					</ul>
-
-
-				</nav>
-
-			</div>
-			<div class="ep-menu-right">
-				zaoidaizhdialzdhl
-			</div>
-		</div>
-	</div>
-
+<nav class="menu_hover">
+  <div class="bleft">
+      <div class="menu__item_hover">
+        <a class="menu__item-link_hover" href="{{get_permalink( get_page_by_title( 'index' ))}}">A Propos</a>
+        <img class="menu__item-img_hover" src="@asset('images/1.jpg')" alt="Some image"/>
+        <div class="marquee_hover">
+          <div class="marquee__inner_hover" aria-hidden="true">
+            <span>A Propos</span>
+            <span>A Propos</span>
+            <span>A Propos</span>
+            <span>A Propos</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu__item_hover">
+        <a class="menu__item-link_hover" href="{{get_permalink( get_page_by_title( 'realisations' ))}}">Realisations</a>
+        <img class="menu__item-img_hover" src="@asset('images/2.jpg')" alt="Some image"/>
+        <div class="marquee_hover">
+          <div class="marquee__inner_hover" aria-hidden="true">
+            <span>Realisations</span>
+            <span>Realisations</span>
+            <span>Realisations</span>
+            <span>Realisations</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu__item_hover">
+        <a class="menu__item-link_hover" href="{{get_permalink( get_page_by_title( 'contact' ))}}">Contact</a>
+        <img class="menu__item-img_hover" src="@asset('images/contact.jpg')" alt="Some image"/>
+        <div class="marquee_hover">
+          <div class="marquee__inner_hover" aria-hidden="true">
+            <span>Contact</span>
+            <span>Contact</span>
+            <span>Contact</span>
+            <span>Contact</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+</div>
 
 
 

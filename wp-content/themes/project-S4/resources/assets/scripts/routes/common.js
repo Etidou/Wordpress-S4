@@ -2,6 +2,7 @@ import $ from 'jquery';
 import gsap  from 'gsap';
 import barba from '@barba/core';
 import kursor from 'kursor';
+import Preloader from '../page/Preloader';
 
 
 
@@ -110,5 +111,7 @@ new kursor({
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
+
+    new Preloader();
   },
 };

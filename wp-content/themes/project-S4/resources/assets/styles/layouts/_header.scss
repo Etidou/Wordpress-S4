@@ -34,7 +34,7 @@
 }
 
 .ep-menu-deco.open {
-	z-index: 52;
+	z-index: 53;
 	.menu-deco-point-isTop {
 		transform: translate(-7px, 7px);
 		background-color: $color-bg;
@@ -96,7 +96,8 @@
 			  -moz-transition: transform 0.8s ease-out;
 			  -o-transition: transform 0.8s ease-out;
 			  transition: transform 0.8s ease-out;
-	// z-index: 49;
+	z-index: 52;
+	background-color: purple;
 }
 
 .ep-menu.open {
@@ -106,87 +107,234 @@
 	left: 0;
 	width: 100%;
 	bottom: 0;
- transform:translateX(-100%);
+ transform:translateX(100%);
 	z-index: 51;
 }
 
-	.ep-menu-left, .ep-menu-right {
-		position: relative;
-		float: left;
-		height: 100%;
-		left: 100%;
-	}
-
-	.ep-menu-left {
-		width: 44%;
-		background-color: $blue;
-		transition-delay: 0.3s;
-		
-		
-	}
-
 	
+:root {
+	font-size: 15px;
+}
 
-	.ep-menu-left:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 100%;
-		width: 100%;
-		background-color: $blue;
+body {
+	margin: 0;
+	color: $color-text;
+	background-color: $color-bg;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: sofia-pro, sans-serif;
+}
+
+/* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
+
+main::before {
+	animation: grain 8s steps(10) infinite;
+	background-image: url(images/noise.png);
+	content: '';
+	left: -50%;
+
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0); }
+  10% { transform:translate(-5%, -10%); }
+  20% { transform:translate(-15%, 5%); }
+  30% { transform:translate(7%, -25%); }
+  40% { transform:translate(-5%, 25%); }
+  50% { transform:translate(-15%, 10%); }
+  60% { transform:translate(15%, 0%); }
+  70% { transform:translate(0%, 15%); }
+  80% { transform:translate(3%, 35%); }
+  90% { transform:translate(-10%, 10%); }
+}
+
+a {
+	text-decoration: none;
+	color: $color-link;
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: $color-link-hover;
+	outline: none;
+}
+
+.frame_hover {
+	padding: 1rem 3vw;
+	text-align: center;
+	position: relative;
+	z-index: 1000;
+	line-height: 1;
+}
+
+.frame__title_hover {
+	font-size: 0.5rem;
+	margin: 0 0 0.5rem;
+	font-weight: 700;
+}
+
+.frame__links_hover {
+	display: inline;
+}
+
+.frame__links_hover a:not(:last-child),
+.frame__demos_hover a:not(:last-child) {
+	margin-right: 0.5rem;
+}
+
+.frame__demos_hover {
+	margin: 0.5rem 0;
+}
+
+.frame__demo--current_hover,
+.frame__demo--current:hover_hover {
+	color: $color-text;
+}
+
+.menu_hover {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	--marquee-width: 100vw;
+	--offset: 20vw;
+	--move-initial: calc(-25% + var(--offset));
+	--move-final: calc(-50% + var(--offset));
+	--item-font-size: 8vw;
+	counter-reset: menu;
+	margin: 4% 0 0 0;
+}
+
+.menu__item_hover {
+	cursor: default;
+	position: relative;
+}
+
+.menu__item-link_hover {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	-webkit-text-stroke: 1.5px #000;
+	text-stroke: 1.5px #000;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	color: transparent;
+	transition: opacity 0.4s;
+	height: 300px;
+}
+
+
+.menu__item-link_hover:hover {
+	transition-duration: 0.1s;
+	opacity: 0;
+}
+
+.menu__item-img_hover {
+	pointer-events: none;
+	position: absolute;
+	height: 50vh;
+	max-height: 300px;
+	opacity: 0;
+	left: 95%;
+	top: 25%;
+	transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+}
+
+.menu__item-link_hover:hover + .menu__item-img_hover {
+	opacity: 1;
+	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+	transition: all 0.4s;
+}
+
+/* Make sure 3 items are visible in the viewport by setting suitable font size. */
+
+.marquee_hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--marquee-width);
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.marquee__inner_hover {
+	width: fit-content;
+	display: flex;
+	position: relative;
+	transform: translate3d(var(--move-initial), 0, 0);
+	animation: marquee 5s linear infinite;
+	animation-play-state: paused;
+	opacity: 0;
+	transition: opacity 0.1s;
+}
+
+.menu__item-link_hover:hover ~ .marquee_hover .marquee__inner_hover {
+	animation-play-state: running;
+	opacity: 1;
+	transition-duration: 0.4s;
+}
+
+.marquee_hover span {
+	text-align: center;
+}
+
+.menu__item-link_hover,
+.marquee_hover span {
+	white-space: nowrap;
+	font-size: var(--item-font-size);
+	padding: 0 1vw;
+	font-weight: 900;
+	line-height: 1.15;
+}
+
+.marquee_hover span {
+	font-style: italic;
+}
+
+@keyframes marquee_hover {
+	0% {
+		transform: translate3d(var(--move-initial), 0, 0);
 	}
-    .ep-menu-right {
-        width: 56%;
-        background-color: $color-bg;
-        transition-delay: 0.4s;
-        transform:translateX(0);
-			 -webkit-transition: transform 0.8s ease-out;
-		  -moz-transition: transform 0.8s ease-out;
-		  -o-transition: transform 0.8s ease-out;
-		  transition: transform 0.8s ease-out;
-     
-    }
 
-
-
-    	
-.ep-menu .menu-container nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: 100%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+	100% {
+		transform: translate3d(var(--move-final), 0, 0);
+	}
 }
 
-.ep-menu .menu-container nav ul {
-    display: block;
-    margin: auto 0;
-    padding-left: 120px;
-}
+@media screen and (min-width: 53em) {
+	.frame_hover {
+		text-align: left;
+		display: grid;
+		align-content: space-between;
+		width: 100%;
+		padding: 2.5rem 6vw;
+		pointer-events: none;
+		grid-template-columns: 75% 25%;
+		grid-template-rows: auto;
+	}
 
-.ep-menu .menu-container nav ul li {
-    display: block;
-    height: 73px;
-    margin: 60px 0;
-    overflow: hidden;
-}
-    
-.ep-menu .menu-container nav ul li a {
-    display: inline-block;
-    color: #000;
-    font-family: 'Playfair Display';
-    font-size: 65px;
-    text-decoration: none;
-    -webkit-transition: opacity .8s ease-out;
-    -o-transition: opacity .8s ease-out;
-    transition: opacity .8s ease-out;
-}
+	.frame__title-wrap_hover {
+		display: flex;
+		align-items: start;
+	}
 
+	.frame__info_hover {
+		margin: 0;
+	}
+
+	.frame__title_hover {
+		margin: 0 1rem 0 0;
+	}
+
+	.frame__links_hover {
+		padding: 0;
+		justify-self: end;
+	}
+
+	.frame_hover a {
+		pointer-events: auto;
+	}
+}
 

@@ -10,9 +10,9 @@ protected $acf = true;
 public function field() {
 
 
-	// $args = array(
- //            'post_type' => 'nom_rea',
- //        );
+	$args = array(
+            'post_type' => 'nom_rea',
+        );
 
         return get_posts();
 }
