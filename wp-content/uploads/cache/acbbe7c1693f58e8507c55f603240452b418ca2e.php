@@ -30,7 +30,7 @@
   <div class="bleft">
       <div class="menu__item_hover">
         <a class="menu__item-link_hover" href="<?php echo e(get_permalink( get_page_by_title( 'index' ))); ?>">A Propos</a>
-        <img class="menu__item-img_hover" src="<?= App\asset_path('images/1.jpg'); ?>" alt="Some image"/>
+        <img class="menu__item-img_hover" src="<?= App\asset_path('images/moi_2.jpg'); ?>" alt="Some image"/>
         <div class="marquee_hover">
           <div class="marquee__inner_hover" aria-hidden="true">
             <span>A Propos</span>
@@ -41,8 +41,8 @@
         </div>
       </div>
       <div class="menu__item_hover">
-        <a class="menu__item-link_hover" href="<?php echo e(get_permalink( get_page_by_title( 'realisations' ))); ?>">Realisations</a>
-        <img class="menu__item-img_hover" src="<?= App\asset_path('images/2.jpg'); ?>" alt="Some image"/>
+        <a class="menu__item-link_hover" href="<?php echo e(get_permalink( get_page_by_path( 'realisation' ))); ?>">Realisations</a>
+        <img class="menu__item-img_hover" src="<?= App\asset_path('images/couleur_violet.gif'); ?>" alt="Some image"/>
         <div class="marquee_hover">
           <div class="marquee__inner_hover" aria-hidden="true">
             <span>Realisations</span>

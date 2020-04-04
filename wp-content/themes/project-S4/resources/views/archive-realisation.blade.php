@@ -1,0 +1,45 @@
+<?php
+/**
+ * Template Name: Realisations
+ */
+?>
+@extends('layouts.app')
+
+<ul class="transition">
+
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+
+
+
+@section('content')
+
+
+	<main data-barba="container" data-barba-namespace="realisations">
+		<nav class="menu">
+			<div class="bleft">
+				@foreach($post_reas as $rea)
+				<div class="menu__item">
+					<a class="menu__item-link" href="{{get_permalink( $rea->ID)}}">{{ $rea->post_title}}</a>
+					<img class="menu__item-img" src="{{get_the_post_thumbnail($rea->ID)}}" alt="Some image"/>
+					<div class="marquee">
+						<div class="marquee__inner" aria-hidden="true">
+							<span>{{ $rea->post_title}}</span>
+							<span>{{ $rea->post_title}}</span>
+							<span>{{ $rea->post_title}}</span>
+							<span>{{ $rea->post_title}}</span>
+						</div>
+					</div>
+				</div>
+				@endforeach
+			</div>
+		</nav>
+	</main>
+
+
+
+

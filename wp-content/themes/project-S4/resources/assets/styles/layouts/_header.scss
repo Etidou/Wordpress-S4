@@ -16,7 +16,7 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin-left: auto;
-	z-index: 50;
+	z-index: 55;
 }
 
 .ep-menu-deco-line {
@@ -97,7 +97,7 @@
 			  -o-transition: transform 0.8s ease-out;
 			  transition: transform 0.8s ease-out;
 	z-index: 52;
-	background-color: purple;
+	background-color: $color-bg;
 }
 
 .ep-menu.open {
@@ -158,6 +158,7 @@ a:hover,
 a:focus {
 	color: $color-link-hover;
 	outline: none;
+	text-decoration: none;
 }
 
 .frame_hover {
@@ -202,9 +203,9 @@ a:focus {
 	--offset: 20vw;
 	--move-initial: calc(-25% + var(--offset));
 	--move-final: calc(-50% + var(--offset));
-	--item-font-size: 8vw;
+	--item-font-size: 6vw;
 	counter-reset: menu;
-	margin: 4% 0 0 0;
+	margin: 4.5% 0 0 0;
 }
 
 .menu__item_hover {
@@ -257,6 +258,7 @@ a:focus {
 	width: var(--marquee-width);
 	overflow: hidden;
 	pointer-events: none;
+	mix-blend-mode: color-burn;
 }
 
 .marquee__inner_hover {
@@ -309,7 +311,7 @@ a:focus {
 		display: grid;
 		align-content: space-between;
 		width: 100%;
-		padding: 2.5rem 6vw;
+		padding: 2.2rem 5vw;
 		pointer-events: none;
 		grid-template-columns: 75% 25%;
 		grid-template-rows: auto;

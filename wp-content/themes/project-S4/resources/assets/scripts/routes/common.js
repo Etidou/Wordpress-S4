@@ -29,7 +29,7 @@ var tlmenu = gsap.timeline();
 
 
 
-$('a.link-menu').click(function(){
+$('a.menu__item-link_hover').click(function(){
     $('.ep-menu-deco').toggleClass('open');
     $('.ep-menu').toggleClass('open');
 

@@ -27,7 +27,6 @@
 
 
 
-  <div class="wrapper">
 
     <main data-barba="container" data-barba-namespace="home">
 
@@ -39,10 +38,10 @@
     </div>
     <img src="@asset('images/first.png')">
 
-    <?php var_dump($args); ?>
+    {!!$nom_rea!!}
+    @debug
 
   </main>
-</div>
 
 
 

@@ -4,17 +4,16 @@ namespace App\Controllers;
 
 use Sober\Controller\Controller;
 
-class Index extends Controller
+class ArchiveRealisation extends Controller
 {
-protected $acf = true;
-public function field() {
+public function post_reas() {
 
 
 	$args = array(
-            'post_type' => 'nom_rea',
+            'post_type' => 'realisation',
         );
 
-        return get_posts();
+        return get_posts($args);
 }
 	// @foreach
 	// {
