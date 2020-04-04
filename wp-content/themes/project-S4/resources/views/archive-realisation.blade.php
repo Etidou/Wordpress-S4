@@ -15,7 +15,6 @@
 </ul>
 
 
-
 @section('content')
 
 
@@ -23,9 +22,11 @@
 		<nav class="menu">
 			<div class="bleft">
 				@foreach($post_reas as $rea)
+
+<?php echo get_the_post_thumbnail($rea->post_title) ?>
 				<div class="menu__item">
 					<a class="menu__item-link" href="{{get_permalink( $rea->ID)}}">{{ $rea->post_title}}</a>
-					<img class="menu__item-img" src="{{get_the_post_thumbnail($rea->ID)}}" alt="Some image"/>
+					<img class="menu__item-img" src="{{get_the_post_thumbnail( $rea->post_title)}}" alt="Some image"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>{{ $rea->post_title}}</span>

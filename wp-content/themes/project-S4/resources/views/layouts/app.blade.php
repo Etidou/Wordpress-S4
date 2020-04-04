@@ -1,9 +1,12 @@
 <!doctype html>
 <html {!! get_language_attributes() !!}>
-@include('partials.head')
+@include('partials.head')  
+
+@include('partials.header')
+@php do_action('get_header') @endphp
 <body @php body_class() @endphp data-barba="wrapper">
-  @php do_action('get_header') @endphp
-  @include('partials.header')
+  
+
   <div class="preload-overlay">
     <ul class="transition">
 
