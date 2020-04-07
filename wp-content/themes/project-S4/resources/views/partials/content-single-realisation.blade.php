@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Realisations
+ * Template Name: Realisations-Single
  */
 ?>
 @extends('layouts.app')
@@ -15,11 +15,6 @@
 </ul>
 
 
-
-@section('content')
-
-
-
-	<main data-barba="container" data-barba-namespace="realisations">
-		
+	<main data-barba="container" data-barba-namespace="single-realisations">
+		<img src="{!!$image_rea!!}">
 	</main>
