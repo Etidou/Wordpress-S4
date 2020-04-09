@@ -3,7 +3,9 @@
  * Template Name: Realisations-Single
  */
 ?>
-@extends('layouts.app')
+
+
+
 
 <ul class="transition">
 

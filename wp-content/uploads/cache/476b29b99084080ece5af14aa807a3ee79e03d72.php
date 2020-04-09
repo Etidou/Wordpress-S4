@@ -2,10 +2,10 @@
 <html <?php echo get_language_attributes(); ?>>
 <?php echo $__env->make('partials.head', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>  
 
-<?php echo $__env->make('partials.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-<?php do_action('get_header') ?>
 <body <?php body_class() ?> data-barba="wrapper">
-  
+<?php do_action('get_header') ?>  
+<?php echo $__env->make('partials.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
 
   <div class="preload-overlay">
     <ul class="transition">
@@ -24,13 +24,10 @@
       </div>
     </div>
   </div>
-  <div class="wrap container" role="document">
-    <div class="content">
-      <main class="main">
+
+
         <?php echo $__env->yieldContent('content'); ?>
-      </main>
-    </div>
-  </div>
+
   <?php do_action('get_footer') ?>
   <?php wp_footer() ?>
 </body>

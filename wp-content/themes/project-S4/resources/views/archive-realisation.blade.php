@@ -23,10 +23,14 @@
 			<div class="bleft">
 				@foreach($post_reas as $rea)
 
-<?php echo get_the_post_thumbnail($rea->post_title) ?>
+
 				<div class="menu__item">
 					<a class="menu__item-link" href="{{get_permalink( $rea->ID)}}">{{ $rea->post_title}}</a>
-					<img class="menu__item-img" src="{{get_the_post_thumbnail( $rea->post_title)}}" alt="Some image"/>
+				
+
+					{!!get_the_post_thumbnail( $rea->ID,"large",array("class"=>"menu__item-img"))!!}
+
+
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>{{ $rea->post_title}}</span>
@@ -41,6 +45,6 @@
 		</nav>
 	</main>
 
-
+@endsection
 
 
