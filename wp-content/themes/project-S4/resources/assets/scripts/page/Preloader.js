@@ -8,7 +8,7 @@ export default class Preloader{
         this.$preloadOverlay = $('.preload-overlay');
         this.$containerOverlay = $('.preload-overlay .container');
         this.$textContainerOverlay = $('.preload-overlay .container div .text');
-        this.innerOverlay = $('.preload-overlay ul.transition li');
+        this.innerOverlay = $('.preload-overlay .overlay');
         this.list_feature = ['photographe du dimanche', 'sportif', 'bassiste'];
     }
     initEvents() { 

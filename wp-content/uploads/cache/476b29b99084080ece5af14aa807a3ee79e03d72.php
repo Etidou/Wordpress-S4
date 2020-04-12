@@ -25,9 +25,16 @@
     </div>
   </div>
 
+  <div id="cursor">
+      <div></div>
+    </div>
+<div class="anim-overlay"></div>
+
+    
+<div class="wrapper">
 
         <?php echo $__env->yieldContent('content'); ?>
-
+</div>
   <?php do_action('get_footer') ?>
   <?php wp_footer() ?>
 </body>

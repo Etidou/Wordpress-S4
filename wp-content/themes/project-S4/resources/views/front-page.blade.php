@@ -36,7 +36,7 @@
       <h1> red </h1>
       <a href="/second" class="cta"> Page 2 </a>
     </div>
-    <img src="@asset('images/first.png')">
+    <img src="@asset('images/first.png')" class="product" >
 
     {!!$nom_rea!!}
     @debug

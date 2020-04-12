@@ -1,8 +1,8 @@
 import $ from 'jquery';
 import gsap  from 'gsap';
 import barba from '@barba/core';
-import kursor from 'kursor';
 import Preloader from '../page/Preloader';
+import Cursor from '../page/Cursor';
 
 
 
@@ -88,6 +88,7 @@ barba.init ({
 		enter(data) {
 			contentAnimation();
 			console.log(data);
+			new Cursor();
 		},
 
 		once(data) {
@@ -99,12 +100,6 @@ barba.init ({
 
 
 
-new kursor({
-            type: 4,
-            removeDefaultCursor: true,
-            color:'#ff0000',
-        })
-
 
 
 
@@ -113,5 +108,6 @@ new kursor({
     // JavaScript to be fired on all pages, after page specific JS is fired
 
     new Preloader();
+    new Cursor();
   },
 };

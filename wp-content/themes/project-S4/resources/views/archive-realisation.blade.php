@@ -19,7 +19,7 @@
 
 
 	<main data-barba="container" data-barba-namespace="realisations">
-		<nav class="menu">
+		<nav class="menu_rea">
 			<div class="bleft">
 				@foreach($post_reas as $rea)
 
@@ -27,7 +27,6 @@
 				<div class="menu__item">
 					<a class="menu__item-link" href="{{get_permalink( $rea->ID)}}">{{ $rea->post_title}}</a>
 				
-
 					{!!get_the_post_thumbnail( $rea->ID,"large",array("class"=>"menu__item-img"))!!}
 
 

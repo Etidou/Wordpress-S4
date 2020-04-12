@@ -2,7 +2,7 @@
 
 	<div class="ep-header ep-header-wrapper">
 		
-		<div class="ep-menu-deco">
+		<div class="ep-menu-deco menu">
 			<div class="ep-menu-deco-line">
 				<div class="menu-deco-point-isTopLeft"></div>
 				<div class="menu-deco-point-isTop"></div>

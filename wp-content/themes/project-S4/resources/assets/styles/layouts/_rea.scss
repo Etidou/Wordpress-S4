@@ -78,7 +78,7 @@ a:focus {
 	color: $color-text;
 }
 
-.menu {
+.menu_rea {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -233,3 +233,67 @@ a:focus {
 		pointer-events: auto;
 	}
 }
+
+
+p.add_style
+{
+	font-size: 90px;
+	font-family: $font_Sofia;
+	font-style: italic;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: black;
+	 -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  opacity: 0;
+
+}
+
+h1.title_rea
+{
+	font-size: 120px;
+	margin-top: 0;
+	color: red;
+	font-family: $font_Sofia;
+	text-align: center;
+	width: 100%;
+}
+
+
+div.title 
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+div.line
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.superpositionfirst {
+  position: absolute;
+  z-index:2;
+}
+
+
+#one 
+{
+	opacity: 1;
+	transition:0.3s;
+	width: 400px;
+	height: 400px;
+}
+
+#second 
+{
+	opacity: 0;
+	transition:0.3s;
+	width: 400px;
+	height: 400px;
+} 
+

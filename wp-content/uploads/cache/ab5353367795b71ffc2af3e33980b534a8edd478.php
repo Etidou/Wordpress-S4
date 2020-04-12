@@ -37,7 +37,7 @@
       <h1> red </h1>
       <a href="/second" class="cta"> Page 2 </a>
     </div>
-    <img src="<?= App\asset_path('images/first.png'); ?>">
+    <img src="<?= App\asset_path('images/first.png'); ?>" class="product" >
 
     <?php echo $nom_rea; ?>
 

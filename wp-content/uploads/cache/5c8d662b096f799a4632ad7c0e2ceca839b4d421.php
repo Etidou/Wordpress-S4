@@ -19,7 +19,7 @@
 
 
 	<main data-barba="container" data-barba-namespace="realisations">
-		<nav class="menu">
+		<nav class="menu_rea">
 			<div class="bleft">
 				<?php $__currentLoopData = $post_reas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $rea): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 
@@ -27,7 +27,6 @@
 				<div class="menu__item">
 					<a class="menu__item-link" href="<?php echo e(get_permalink( $rea->ID)); ?>"><?php echo e($rea->post_title); ?></a>
 				
-
 					<?php echo get_the_post_thumbnail( $rea->ID,"large",array("class"=>"menu__item-img")); ?>
 
 
