@@ -24,28 +24,29 @@
 
 
 		<marquee behavior="scroll" direction="left" scrollamount="20">	<div class="line">
-			<p class="add_style">Titre</p>
-			<p class="add_style">Titre</p>
-			<p class="add_style">Titre</p>
-			<p class="add_style">Titre</p>
-			<p class="add_style">Titre</p>
-			<p class="add_style">Titre</p>
-			<p class="add_style">Titre</p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
 		</div>  </marquee>
 
 		<div class="line">
-			<h1 class="title_rea">Titre</h1>
+			<?php echo $title_rea; ?>
+
 		</div>
 
 
 		<marquee behavior="scroll" direction="right" scrollamount="20"><div class="line">
-			<p class="add_style">Titre</p>
-			<p class="add_style">Titre</p>
-			<p class="add_style">Titre</p>
-			<p class="add_style">Titre</p>
-			<p class="add_style">Titre</p>
-			<p class="add_style">Titre</p>
-			<p class="add_style">Titre</p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
+			<p class="add_style"><?php echo $nom_rea; ?></p>
 		</div></marquee>
 	</div>
 
