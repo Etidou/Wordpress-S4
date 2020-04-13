@@ -7,6 +7,11 @@
 }
 
 
+body.open 
+{
+	overflow: hidden;
+}
+
 .ep-menu-deco {
 	position: relative;
 	height: 32px;
@@ -98,6 +103,7 @@
 			  transition: transform 0.8s ease-out;
 	z-index: 52;
 	background-color: $color-bg;
+	overflow: hidden;
 }
 
 .ep-menu.open {
@@ -109,6 +115,7 @@
 	bottom: 0;
  transform:translateX(100%);
 	z-index: 51;
+	overflow: hidden;
 }
 
 	
@@ -223,13 +230,15 @@ a:focus {
 	text-fill-color: transparent;
 	color: transparent;
 	transition: opacity 0.4s;
-	height: 300px;
+	height: 140px;
+	 cursor: url('../../images/cursor.png'), auto;
 }
 
 
 .menu__item-link_hover:hover {
 	transition-duration: 0.1s;
 	opacity: 0;
+	 cursor: url('../../images/cursor.png'), auto;
 }
 
 .menu__item-img_hover {
@@ -247,6 +256,7 @@ a:focus {
 	opacity: 1;
 	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
 	transition: all 0.4s;
+	 cursor: url('../../images/cursor.png'), auto;
 }
 
 /* Make sure 3 items are visible in the viewport by setting suitable font size. */
@@ -289,6 +299,8 @@ a:focus {
 	padding: 0 1vw;
 	font-weight: 900;
 	line-height: 1.15;
+	margin-bottom: 15VH;
+	margin-top: 1vh;
 }
 
 .marquee_hover span {

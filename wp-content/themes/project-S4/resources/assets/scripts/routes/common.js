@@ -15,6 +15,8 @@ $('.ep-menu-deco').click(function(){
     $('.ep-menu-deco').toggleClass('open');
     $('.ep-menu').toggleClass('open');
     $('.menu-wrapper').toggleClass('open');
+    $('body').toggleClass('open');
+
 
 
 var tlmenu = gsap.timeline();
@@ -32,6 +34,7 @@ var tlmenu = gsap.timeline();
 $('a.menu__item-link_hover').click(function(){
     $('.ep-menu-deco').toggleClass('open');
     $('.ep-menu').toggleClass('open');
+    $('body.open').removeClass('open');
 
 	
 });
@@ -44,6 +47,8 @@ $('a.menu__item-link_hover').click(function(){
 	tl.to('ul.transition li', { duration: .5, scaleY: 1, transformOrigin: 'bottom left', stagger: .05})
 	tl.to('ul.transition li', { duration: .5, scaleY: 0, transformOrigin: 'bottom left', stagger: .05,delay: .1})
 }
+
+
 
 
 

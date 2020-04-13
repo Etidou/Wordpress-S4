@@ -1,4 +1,4 @@
-import {Expo, TweenMax} from 'gsap';
+import {Expo, TweenMax, TimelineMax, Power4} from 'gsap';
 export default class StickyMouse {
      constructor() {
           this.initElems();
@@ -6,6 +6,7 @@ export default class StickyMouse {
      }
 
      initElems() {
+      this.$linksPost = $('.link-realisation-container a');
           this.$cursor = $('#cursor');
           this.mousePosition = {};
           this.cursorPosition = {
@@ -21,6 +22,7 @@ export default class StickyMouse {
      initEvents() {
           this.animateCursor();
           this.linkCursorInteraction();
+          this.animButtonLinkPrevNext();
      }
 
      animateCursor() {
@@ -84,12 +86,14 @@ export default class StickyMouse {
                     $('p.add_style').css('opacity','1');
                     $('body').css('background-color','black');
                     $('h1.title_rea').css('color','white');
+                    $('li.skills_list').css('color','white');
 
                },
                ()=> {
                     $('p.add_style').css('opacity','0');
                     $('h1.title_rea').css('color','red');
                     $('body').css('background-color','#f8ecde');
+                    $('li.skills_list').css('color','black');
 
                }
           )
@@ -109,5 +113,34 @@ export default class StickyMouse {
 
                }
           )
+
+
+
+
+
      }
+
+
+         animButtonLinkPrevNext() {
+        let tl1 = new TimelineMax();
+        let tl2 = new TimelineMax();
+        this.$linksPost.hover(
+            function () {
+                tl1
+                .to($(this).find('span'), 0.7, {
+                    y: '-100%',
+                    ease: Power4.easeInOut,
+
+                })
+            },
+            function () {
+
+                tl2
+                .to($(this).find('span'), 1, {
+                    y: '0%',
+                    ease: Power4.easeInOut,
+                })
+            }
+        )
+    }
 }
