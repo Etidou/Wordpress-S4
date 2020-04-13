@@ -297,3 +297,26 @@ div.line
 	height: 400px;
 } 
 
+div.flex_rea
+{
+	display: flex;
+}
+
+li.skills_list
+{
+	font-size: 24px;
+	color: black;
+	font-family: $font_Sofia;
+	list-style-type: disc;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+
+div.skills
+{
+	display: flex;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
