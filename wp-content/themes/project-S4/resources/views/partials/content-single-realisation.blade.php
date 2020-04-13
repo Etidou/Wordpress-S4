@@ -64,25 +64,25 @@
 			</ul>
 		</div>
 
-			<div class="link-realisation-container">
+		<div class="link-realisation-container">
 
-					@if(isset(Single::previousLink()->ID))
+			@if(isset(Single::previousLink()->ID))
 
-					<a href="{{get_permalink(Single::previousLink()->ID)}}">
-					<div class="link-realisation-overlay"></div>
-						<span>Projet précédent</span>
-						<span>{{ Single::previousLink()->post_title }}</span>
-					</a>
-					@endif
+			<a href="{{get_permalink(Single::previousLink()->ID)}}">
+				<div class="link-realisation-overlay"></div>
+				<span>Projet précédent</span>
+				<span>{{ Single::previousLink()->post_title }}</span>
+			</a>
+			@endif
 
-					@if(isset(Single::nextLink()->ID))
-					<a href="{{get_permalink(Single::nextLink()->ID)}}">
-					<div class="link-realisation-overlay"></div>
-						<span>Projet suivant</span>
-						<span>{{ Single::nextLink()->post_title }}</span>
-					</a>
-					@endif
-					</div>
+			@if(isset(Single::nextLink()->ID))
+			<a href="{{get_permalink(Single::nextLink()->ID)}}">
+				<div class="link-realisation-overlay"></div>
+				<span>Projet suivant</span>
+				<span>{{ Single::nextLink()->post_title }}</span>
+			</a>
+			@endif
+		</div>
 
 	</div>
 

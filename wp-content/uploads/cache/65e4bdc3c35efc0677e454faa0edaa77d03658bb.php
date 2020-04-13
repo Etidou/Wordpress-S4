@@ -79,25 +79,25 @@
 			</ul>
 		</div>
 
-			<div class="link-realisation-container">
+		<div class="link-realisation-container">
 
-					<?php if(isset(Single::previousLink()->ID)): ?>
+			<?php if(isset(Single::previousLink()->ID)): ?>
 
-					<a href="<?php echo e(get_permalink(Single::previousLink()->ID)); ?>">
-					<div class="link-realisation-overlay"></div>
-						<span>Projet précédent</span>
-						<span><?php echo e(Single::previousLink()->post_title); ?></span>
-					</a>
-					<?php endif; ?>
+			<a href="<?php echo e(get_permalink(Single::previousLink()->ID)); ?>">
+				<div class="link-realisation-overlay"></div>
+				<span>Projet précédent</span>
+				<span><?php echo e(Single::previousLink()->post_title); ?></span>
+			</a>
+			<?php endif; ?>
 
-					<?php if(isset(Single::nextLink()->ID)): ?>
-					<a href="<?php echo e(get_permalink(Single::nextLink()->ID)); ?>">
-					<div class="link-realisation-overlay"></div>
-						<span>Projet suivant</span>
-						<span><?php echo e(Single::nextLink()->post_title); ?></span>
-					</a>
-					<?php endif; ?>
-					</div>
+			<?php if(isset(Single::nextLink()->ID)): ?>
+			<a href="<?php echo e(get_permalink(Single::nextLink()->ID)); ?>">
+				<div class="link-realisation-overlay"></div>
+				<span>Projet suivant</span>
+				<span><?php echo e(Single::nextLink()->post_title); ?></span>
+			</a>
+			<?php endif; ?>
+		</div>
 
 	</div>
 

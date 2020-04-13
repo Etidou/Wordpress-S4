@@ -87,9 +87,11 @@ export default class StickyMouse {
                     $('body').css('background-color','black');
                     $('h1.title_rea').css('color','white');
                     $('li.skills_list').css('color','white');
+                    $('a').css('color','white');
 
                },
                ()=> {
+                    $('a').css('color','black');
                     $('p.add_style').css('opacity','0');
                     $('h1.title_rea').css('color','red');
                     $('body').css('background-color','#f8ecde');

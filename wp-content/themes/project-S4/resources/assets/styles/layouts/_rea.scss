@@ -300,6 +300,7 @@ div.line
 div.flex_rea
 {
 	display: flex;
+	margin-top: 5vh;
 }
 
 li.skills_list
@@ -382,5 +383,13 @@ a {
     }
 }
 
+
+div.link-realisation-container
+{
+	margin-top: 2vh;
+	margin-bottom: 4vh;
+	display: flex;
+	justify-content: space-around;
+}
 
 
