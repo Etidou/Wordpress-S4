@@ -121,9 +121,9 @@
 	</div> 
 
 <div class="flex_button">
-	<div class="bottom-realisation_web">
-		<a class="link-home_web" href="">
-			<div class="overlay-bottom-realisation_web"></div>
+	<div class="bottom-realisation">
+		<a class="link-home" href="">
+			<div class="overlay-bottom-realisation"></div>
 			<span></span>
 			<p>Voir le Site</p>
 		</a>

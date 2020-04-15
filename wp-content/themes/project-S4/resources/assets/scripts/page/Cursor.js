@@ -34,7 +34,7 @@ initEvents() {
   this.linkCursorInteraction();
   this.animButtonLinkPrevNext();
   this.animButtonHomeRea();
-  this.animButtonHomeWebsite();
+  // this.animButtonHomeWebsite();
 }
 
 animateCursor() {
