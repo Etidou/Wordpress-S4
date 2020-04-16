@@ -12,9 +12,9 @@ initElems() {
   this.$overlayButtonHome = $('.bottom-realisation .link-home .overlay-bottom-realisation');
 
 
-  // this.$buttonHomeWeb = $('.bottom-realisation .link-home');
-  // this.$buttonHomeTextWeb = $('.bottom-realisation .link-home p');
-  // this.$overlayButtonHomeWeb = $('.bottom-realisation .link-home .overlay-bottom-realisation_web');
+  this.$buttonHomeWeb = $('.bottom-realisation_web .link-home_web');
+  this.$buttonHomeTextWeb = $('.bottom-realisation_web .link-home_web p.web');
+  this.$overlayButtonHomeWeb = $('.bottom-realisation_web .link-home_web .overlay-bottom-realisation_web');
   
   
   this.$cursor = $('#cursor');
@@ -34,7 +34,7 @@ initEvents() {
   this.linkCursorInteraction();
   this.animButtonLinkPrevNext();
   this.animButtonHomeRea();
-  // this.animButtonHomeWebsite();
+  this.animButtonHomeWebsite();
 }
 
 animateCursor() {
@@ -78,20 +78,69 @@ linkCursorInteraction() {
    })
     this.$cursor.css('opacity','1');
                     // this.$cursor.css('display','block');
-                    this.$cursor.css('background-color','black');
-                    this.$cursor.text('Menu');
+    this.$cursor.css('background-color','black');
+    this.$cursor.css('color','white');
+    this.$cursor.text('Menu');
 
-                  },
-                  ()=> {
-                    TweenMax.to(this.$cursor, 0.5, {
-                     scale: 1,
-                     ease: Expo.easeOut,
-                   })
-                    this.$cursor.css('opacity','0');
-                    // this.$cursor.css('display','none');
-                    this.$cursor.text('');
-                  }
-                  )
+    },
+    ()=> {
+    TweenMax.to(this.$cursor, 0.5, {
+    scale: 1,
+    ease: Expo.easeOut,
+    })
+    this.$cursor.css('opacity','0');
+    // this.$cursor.css('display','none');
+    this.$cursor.text('');
+    }
+    )
+
+    $('h1.title_contact').hover(
+   ()=> {
+    TweenMax.to(this.$cursor, 0.5, {
+     scale: 1.5,
+     ease: Expo.easeOut,
+   })
+    this.$cursor.css('opacity','1');
+                    // this.$cursor.css('display','block');
+    this.$cursor.css('background-color','white');
+    this.$cursor.css('color','black');
+    this.$cursor.text('Mail');
+
+    },
+    ()=> {
+    TweenMax.to(this.$cursor, 0.5, {
+    scale: 1,
+    ease: Expo.easeOut,
+    })
+    this.$cursor.css('opacity','0');
+    // this.$cursor.css('display','none');
+    this.$cursor.text('');
+    }
+    )
+
+       $('a.phone').hover(
+   ()=> {
+    TweenMax.to(this.$cursor, 0.5, {
+     scale: 1.5,
+     ease: Expo.easeOut,
+   })
+    this.$cursor.css('opacity','1');
+                    // this.$cursor.css('display','block');
+    this.$cursor.css('background-color','white');
+    this.$cursor.css('color','black');
+    this.$cursor.text('Telephone');
+
+    },
+    ()=> {
+    TweenMax.to(this.$cursor, 0.5, {
+    scale: 1,
+    ease: Expo.easeOut,
+    })
+    this.$cursor.css('opacity','0');
+    // this.$cursor.css('display','none');
+    this.$cursor.text('');
+    }
+    )
 
   $('h1.title_rea').hover(
    ()=> {
@@ -118,6 +167,41 @@ linkCursorInteraction() {
 
   }
   )
+
+
+    $('a.phone').hover(
+   ()=> {
+    $('body').css('background-color','black');
+    $('a.phone').css('color','white');
+     $('h1.title_contact').css('color','white');
+  },
+  ()=> {
+    $('body').css('background-color','#f8ecde');
+    $('a.phone').css('color','black');
+    $('h1.title_contact').css('color','red');
+
+
+  }
+  )
+
+
+
+  $('h1.title_contact').hover(
+   ()=> {
+    $('p.add_style').css('opacity','1');
+    $('body').css('background-color','black');
+    $('h1.title_contact').css('color','white');
+    $('a.phone').css('color','white');
+  },
+  ()=> {
+    $('p.add_style').css('opacity','0');
+    $('h1.title_contact').css('color','red');
+    $('body').css('background-color','#f8ecde');
+    $('a.phone').css('color','black');
+  }
+  )
+
+
 
   $('.superpositionfirst').hover(
    ()=> {
@@ -204,34 +288,39 @@ animButtonHomeRea() {
 }
 
 
-// animButtonHomeWebsite() {
-//   this.$buttonHomeWeb.hover(
-//     ()=> {
-//       let tl = new TimelineMax();
-//       tl
-//       .to(this.$overlayButtonHomeWeb, 0.8, {
-//         top:'0%',
-//         left: '0%',
-//         ease: Power4.easeInOut,
-//       }, '-=0.9')
-//       .to(this.$buttonHomeTextWeb, 0.8, {
-//         color: 'white',
-//         ease: Power4.easeInOut,
-//       }, '-=0.8')
-//     },
-//     ()=> {
-//       let tl = new TimelineMax();
-//       tl
-//       .to(this.$overlayButtonHomeWeb, 0.8, {
-//         top:'-100%',
-//                     // left: '0%',
-//                     ease: Power4.easeInOut,
-//                   })
-//       .to(this.$buttonHomeTextWeb, 0.8, {
-//         color: 'red',
-//         ease: Power4.easeInOut,
-//       }, '-=0.8')
-//     }
-//     )
-// }
+animButtonHomeWebsite() {
+  this.$buttonHomeWeb.hover(
+    ()=> {
+      let tl = new TimelineMax();
+      tl
+      .to(this.$buttonHomeLine, 1, {
+        width: '80%',
+        opacity: '0',
+        ease: Power4.easeInOut,
+      })
+      .to(this.$overlayButtonHomeWeb, 0.8, {
+        top:'0%',
+        left: '0%',
+        ease: Power4.easeInOut,
+      }, '-=0.9')
+      .to(this.$buttonHomeTextWeb, 0.8, {
+        color: 'white',
+        ease: Power4.easeInOut,
+      }, '-=0.8')
+    },
+    ()=> {
+      let tl = new TimelineMax();
+      tl
+      .to(this.$overlayButtonHomeWeb, 0.8, {
+        top:'-100%',
+                    // left: '0%',
+                    ease: Power4.easeInOut,
+                  })
+      .to(this.$buttonHomeTextWeb, 0.8, {
+        color: 'red',
+        ease: Power4.easeInOut,
+      }, '-=0.8')
+    }
+    )
+}
 }

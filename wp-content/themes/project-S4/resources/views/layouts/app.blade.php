@@ -31,10 +31,10 @@
 <div class="anim-overlay"></div>
 
     
-<div class="wrapper">
+<!-- <div class="wrapper"> -->
 
         @yield('content')
-</div>
+<!-- </div> -->
   @php do_action('get_footer') @endphp
   @php wp_footer() @endphp
 </body>

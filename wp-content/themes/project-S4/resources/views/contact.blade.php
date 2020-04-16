@@ -15,6 +15,9 @@
 
 @extends('layouts.app')
 
+
+
+
 @section('content')
 
 <!-- 
@@ -26,11 +29,56 @@
 
 
 
-  <div class="wrapper">
 
     <main data-barba="container" data-barba-namespace="contact">
 
+<div class="title">
 
+		<marquee behavior="scroll" direction="left" scrollamount="18">	<div class="line">
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+		</div>  </marquee>
+
+		<div class="line">
+		{!!$title_email!!} 
+		</div>
+
+
+		<marquee behavior="scroll" direction="right" scrollamount="18"><div class="line">
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+			{!!$email!!}
+		</div></marquee>
+	</div>
+
+<div class="wrapper">
+
+		<div class="call">
+		<a class="phone" href="tel:+33783994094">{!!$phone!!}</a>
+		</div>
+
+
+
+
+
+
+
+</div>
 
   </main>
 </div>

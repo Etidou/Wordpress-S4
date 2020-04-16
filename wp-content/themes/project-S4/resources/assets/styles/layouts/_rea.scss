@@ -1,7 +1,9 @@
 :root {
 	font-size: 15px;
 }
-
+.wrapper_rea {
+ padding:0 240px;
+ }
 body {
 	margin: 0;
 	color: $color-text;
@@ -414,46 +416,46 @@ p.text
 
 
 
-// .bottom-realisation_web {
-// 	bottom: 10vh;
-// 	display: flex;
-// 	align-items: flex-end;
-// 	left: 0;
-// 	position: relative;
-// 	.link-home_web {
-// 		align-items: center;
-// 		background-color: black;
-// 		box-sizing: border-box;
-// 		display: flex;
-// 		justify-content: center;
-// 		overflow: hidden;
-// 		padding: 60px 50px;
-// 		position: relative;
-// 		text-decoration: none;
-// 		background-color:#cccccc; 
+.bottom-realisation_web {
+	bottom: 10vh;
+	display: flex;
+	align-items: flex-end;
+	left: 0;
+	position: relative;
+	.link-home_web {
+		align-items: center;
+		background-color: black;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		overflow: hidden;
+		padding: 60px 50px;
+		position: relative;
+		text-decoration: none;
+		background-color:#cccccc; 
 
-// 		.overlay-bottom-realisation_web {
-// 			background-color: black;
-// 			height: 100%;
-// 			left: 0%;
-// 			top:-100%;
-// 			position: absolute;
-// 			width: 100%;
-// 			z-index: 1;
-// 		}
+		.overlay-bottom-realisation_web {
+			background-color: black;
+			height: 100%;
+			left: 0%;
+			top:-100%;
+			position: absolute;
+			width: 100%;
+			z-index: 1;
+		}
 
-// 		p {
-// 			color: red;
-// 			font-family: $font_Karla;
-// 			font-size: 26px;
-// 			margin-left: auto;
-// 			margin-right: auto;
-// 			text-align: center;
-// 			position: relative;
-// 			z-index: 1;
-// 		}
-// 	}
-// }
+		p.web {
+			color: red;
+			font-family: $font_Karla;
+			font-size: 26px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			position: relative;
+			z-index: 1;
+		}
+	}
+}
 
 .bottom-realisation {
 	bottom: 10vh;

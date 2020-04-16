@@ -14,7 +14,7 @@
 	<li></li>
 </ul>
 
-
+<div class="wrapper">
 <?php $__env->startSection('content'); ?>
 
 
@@ -46,7 +46,7 @@
 	</main>
 
 <?php $__env->stopSection(); ?>
-
+</div>
 
 
 <?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

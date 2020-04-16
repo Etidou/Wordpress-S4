@@ -14,7 +14,7 @@
 	<li></li>
 </ul>
 
-
+<div class="wrapper">
 @section('content')
 
 
@@ -45,5 +45,5 @@
 	</main>
 
 @endsection
-
+</div>
 

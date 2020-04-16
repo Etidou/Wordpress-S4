@@ -38,6 +38,12 @@
 
 			<?php echo $nom_rea; ?>
 
+			<?php echo $nom_rea; ?>
+
+			<?php echo $nom_rea; ?>
+
+			<?php echo $nom_rea; ?>
+
 		</div>  </marquee>
 
 		<div class="line">
@@ -61,9 +67,15 @@
 
 			<?php echo $nom_rea; ?>
 
+			<?php echo $nom_rea; ?>
+
+			<?php echo $nom_rea; ?>
+
+			<?php echo $nom_rea; ?>
+
 		</div></marquee>
 	</div>
-
+<div class="wrapper_rea">
 	<div class="skills_rea">
 
 
@@ -111,21 +123,19 @@
 
 		<div class="title">
 			<p class="description_project"> Présentation du projet </p>
+				<?php echo $description; ?>
 
-			<p class="text">
-				"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-			</p>
 		</div>
 
 
 	</div> 
 
 <div class="flex_button">
-	<div class="bottom-realisation">
-		<a class="link-home" href="">
-			<div class="overlay-bottom-realisation"></div>
+	<div class="bottom-realisation_web">
+		<a class="link-home_web" href="<?php echo $lien_rea; ?>" target="_blank">
+			<div class="overlay-bottom-realisation_web"></div> 
 			<span></span>
-			<p>Voir le Site</p>
+			<p class="web">Voir le Site</p>
 		</a>
 	</div>
 
@@ -140,6 +150,6 @@
  
 <div class="footer">
 </div>
-
+</div>
 
 </main>
