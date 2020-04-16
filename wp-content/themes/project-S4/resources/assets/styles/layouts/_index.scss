@@ -1,3 +1,8 @@
+html 
+{
+	background-color: $color-bg;
+}
+
 h1.title 
 {
 	font-size: 100px;
@@ -18,8 +23,21 @@ p.presentation
 
 p.anecdote 
 {
+	font-size: 24px;
 	margin-bottom: 20px;
-	width: 80%;
+	width: 90%;
 	font-family: $font_Karla;
 	color: black;
+}
+
+span.iut,span.mmi 
+{
+	font-weight: bold;
+}
+
+a.link 
+{
+	font-size: 30px;
+	font-weight: bold;
+	height: auto;
 }

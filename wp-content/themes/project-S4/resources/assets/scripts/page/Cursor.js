@@ -94,6 +94,55 @@ linkCursorInteraction() {
     }
     )
 
+    $('span.mmi').hover(
+   ()=> {
+    TweenMax.to(this.$cursor, 0.5, {
+     scale: 1.5,
+     ease: Expo.easeOut,
+   })
+    this.$cursor.css('opacity','1');
+                    // this.$cursor.css('display','block');
+    this.$cursor.css('background-color','black');
+    this.$cursor.css('color','white');
+    this.$cursor.text('MMI');
+
+    },
+    ()=> {
+    TweenMax.to(this.$cursor, 0.5, {
+    scale: 1,
+    ease: Expo.easeOut,
+    })
+    this.$cursor.css('opacity','0');
+    // this.$cursor.css('display','none');
+    this.$cursor.text('');
+    }
+    )
+
+
+    $('span.iut').hover(
+   ()=> {
+    TweenMax.to(this.$cursor, 0.5, {
+     scale: 1.5,
+     ease: Expo.easeOut,
+   })
+    this.$cursor.css('opacity','1');
+                    // this.$cursor.css('display','block');
+    this.$cursor.css('background-color','black');
+    this.$cursor.css('color','white');
+    this.$cursor.text('IUT');
+
+    },
+    ()=> {
+    TweenMax.to(this.$cursor, 0.5, {
+    scale: 1,
+    ease: Expo.easeOut,
+    })
+    this.$cursor.css('opacity','0');
+    // this.$cursor.css('display','none');
+    this.$cursor.text('');
+    }
+    )
+
     $('h1.title_contact').hover(
    ()=> {
     TweenMax.to(this.$cursor, 0.5, {
