@@ -14,11 +14,11 @@
 	<li></li>
 </ul>
 
-<div class="wrapper">
 <?php $__env->startSection('content'); ?>
 
 
 	<main data-barba="container" data-barba-namespace="realisations">
+		<div class="wrapper">
 		<nav class="menu_rea">
 			<div class="bleft">
 				<?php $__currentLoopData = $post_reas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $rea): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -43,10 +43,11 @@
 				<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 			</div>
 		</nav>
+	</div>
 	</main>
 
 <?php $__env->stopSection(); ?>
-</div>
+
 
 
 <?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

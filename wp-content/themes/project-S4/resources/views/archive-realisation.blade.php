@@ -14,11 +14,11 @@
 	<li></li>
 </ul>
 
-<div class="wrapper">
 @section('content')
 
 
 	<main data-barba="container" data-barba-namespace="realisations">
+		<div class="wrapper">
 		<nav class="menu_rea">
 			<div class="bleft">
 				@foreach($post_reas as $rea)
@@ -42,8 +42,9 @@
 				@endforeach
 			</div>
 		</nav>
+	</div>
 	</main>
 
 @endsection
-</div>
+
 
