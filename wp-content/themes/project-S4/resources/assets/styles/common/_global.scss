@@ -339,7 +339,12 @@ a:focus {
 }
 
 
-
+main 
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
 
 div#page {
 	display: none;
@@ -347,10 +352,11 @@ div#page {
 
 div.line_loader
 {
-display: flex;
 transform: rotate(-3deg);
 margin-top: 0.5vh;
 margin-bottom: 0.5vh;
+display: block;
+margin-top: -50px;
 }
 
 div.column_loader_left
@@ -438,7 +444,7 @@ p.add_style_loader
     		margin-top: 2vh;
     		margin-bottom: 2vh;
     		width: 100%;
-text-align: center;
+			text-align: center;
     	}
 
     	span {

@@ -8,6 +8,7 @@ export default class Preloader{
         this.$preloadOverlay = $('.preload-overlay');
         this.$containerOverlay = $('.preload-overlay .container');
         this.$textContainerOverlay = $('.preload-overlay .container div.text_loader .text');
+        this.$textdiv = $('div.text_loader');
         this.innerOverlay = $('.preload-overlay .overlay');
         this.$marquee= $('p.add_style_loader');
 
@@ -28,59 +29,55 @@ export default class Preloader{
             .staggerTo(this.$textContainerOverlay, 2, {
                 y: '0%',
                 stagger: 0.8,
+                ease: Expo.easeOut,
+            }, '+=0.1')
+
+            .to(this.$textdiv, 1, {
                 rotation:-3,
                 ease: Expo.easeOut,
             }, '+=0.1')
 
             .to(this.$preloadOverlay, 0, {
-                 backgroundColor:'#f8ecde',
-                y: '0%',
-                 ease: Power4.easeInOut,
-             })
+               backgroundColor:'#f8ecde',
+               y: '0%',
+               ease: Power4.easeInOut,
+           })
 
-
-            .to(this.$preloadOverlay, 1, {
-                 backgroundColor:'#000000',
-                y: '0%',
-                 ease: Power4.easeInOut,
-             })
-            .to(this.$textContainerOverlay, 2, {
+            .to(this.$textContainerOverlay, 0.5, {
                 color:'#ffffff',
             })
 
-            .to(this.$marquee, 2, {
+            .to(this.$preloadOverlay, 0.5, {
+               backgroundColor:'#000000',
+               y: '0%',
+               ease: Power4.easeInOut,
+           })
+
+            .to(this.$marquee, 1, {
                 opacity:1,
             })
 
+            .to(this.$preloadOverlay, 5, {
+               backgroundColor:'#000000',
+               y: '0%',
+               ease: Power4.easeInOut,
+           },'-=0.2')
 
+            .to(this.$marquee, 0.1, {
+                opacity:0,
+            })
 
-            .to(this.$preloadOverlay, 100000, {
-                 backgroundColor:'#000000',
-                y: '0%',
-                 ease: Power4.easeInOut,
-             },'-=0.2')
-
-
-
-            .to(this.$preloadOverlay, 4.5, {
+            .to(this.$preloadOverlay, 2.5, {
                 backgroundColor:'#f8ecde',
                 y: '100%',
-                 ease: Power4.easeInOut,
-             },'-=1')
+                ease: Power4.easeInOut,
+            },'-=1')
 
-
-
-
-
-
-
-
-
-             .from($('.item-keyword'), 1.5, {
+            .from($('.item-keyword'), 1.5, {
                 y: '-5%',
                 opacity: 0,
-                 ease: Power4.easeInOut,
-             })
+                ease: Power4.easeInOut,
+            })
         });
     }
 }
