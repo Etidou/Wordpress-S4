@@ -19,6 +19,7 @@
 
 	<main data-barba="container" data-barba-namespace="realisations">
 		<div class="wrapper">
+	<div class="menu-margin">
 		<nav class="menu_rea">
 			<div class="bleft">
 				@foreach($post_reas as $rea)
@@ -42,6 +43,7 @@
 				@endforeach
 			</div>
 		</nav>
+	</div>
 	</div>
 	</main>
 

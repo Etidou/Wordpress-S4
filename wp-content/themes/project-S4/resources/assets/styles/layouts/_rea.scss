@@ -113,7 +113,7 @@ a:focus {
 	height: 50vh;
 	max-height: 300px;
 	opacity: 0;
-	left: 100%;
+	left: 250%;
 	top: 50%;
 	transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
 }
@@ -489,4 +489,177 @@ div.flex_button
 {
 	display: flex;
 	justify-content: space-around;
+}
+
+
+@media screen and (max-width: 1440px) {
+	.menu__item-link::before {
+    bottom: 80%;
+}
+}
+
+
+@media screen and (max-width: 1270px) {
+.wrapper_rea {
+ padding:0 120px;
+ }
+}
+
+
+
+@media screen and (max-width: 900px) {
+.wrapper_rea {
+ padding:0 60px;
+ }
+
+ #one 
+{
+	width: 200px;
+	height: 200px;
+}
+
+#second 
+{
+	width: 200px;
+	height: 200px;
+} 
+
+.bottom-realisation_web {
+	.link-home_web {
+		padding: 36px 25px;
+
+		p.web {
+			font-size: 13px;
+		}
+	}
+}
+
+.bottom-realisation {
+	.link-home {
+		padding: 30px 25px;
+
+		p {
+			font-size: 13px;
+		}
+	}
+}
+
+h1.title_rea
+{
+	font-size: 80px;
+}
+
+p.add_style
+{
+	font-size: 60px;
+}
+
+}
+
+
+@media screen and (max-width: 790px) {
+.menu__item-img {
+    top: 30%;
+    height: 150px;
+    width: 150px;
+}
+
+.menu__item-link {
+    height: 150px;
+}
+div.menu-margin
+{
+	margin-top: 10vh;
+}
+
+.menu__item-link::before {
+    bottom: 70%;
+}
+
+}
+
+
+
+@media screen and (max-width: 630px) {
+h1.title_rea
+{
+	font-size: 60px;
+}
+
+p.add_style
+{
+	font-size: 40px;
+}
+
+li.skills_list
+{
+	font-size: 18px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.wrapper_rea {
+ padding:0 30px;
+ }
+
+ a {
+	font-size: 18px;
+    height: 35px; // = lineheight span + 2*padding du span
+
+    span {
+    	padding: 6px;
+    	line-height: 23px;
+    }
+}
+}
+
+@media screen and (max-width: 460px) {
+
+.wrapper_rea {
+ padding:0px 30px;
+ }
+
+ div.title {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+p.description {
+    font-size: 12px;
+}
+
+p.description_project {
+    font-size: 12px;
+}
+
+div.flex_button {
+    margin-bottom: -10vh;
+}
+
+}
+
+
+
+@media screen and (max-width: 430px) {
+
+.menu_rea {
+    --marquee-width: 100vw;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    --item-font-size: 70px;
+}
+
+.wrapper_rea {
+ padding:0px 10px;
+ }
+
+main {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+}
 }

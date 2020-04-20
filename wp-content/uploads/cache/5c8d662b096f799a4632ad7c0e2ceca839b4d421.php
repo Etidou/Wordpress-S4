@@ -19,6 +19,7 @@
 
 	<main data-barba="container" data-barba-namespace="realisations">
 		<div class="wrapper">
+	<div class="menu-margin">
 		<nav class="menu_rea">
 			<div class="bleft">
 				<?php $__currentLoopData = $post_reas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $rea): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -43,6 +44,7 @@
 				<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 			</div>
 		</nav>
+	</div>
 	</div>
 	</main>
 
