@@ -12,24 +12,24 @@ ul.transition {
 
 ul.transition li{
   width: 20%;
-  background:white;
+  background:black;
   transform: scaleY(0);
 }
 
 ul.transition li:first-of-type{
   width: 20%;
-  background:black;
+  background:red;
   transform: scaleY(0);
 }
 
 ul.transition li:last-of-type{
   width: 20%;
-  background:black;
+  background:red;
   transform: scaleY(0);
 }
 
 ul.transition li:nth-of-type(2n){
   width: 20%;
-  background:grey;
+  background:#f8ecde;
   transform: scaleY(0);
 }

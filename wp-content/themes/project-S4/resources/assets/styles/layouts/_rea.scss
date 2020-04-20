@@ -492,14 +492,25 @@ div.flex_button
 }
 
 
-@media screen and (max-width: 1440px) {
-	.menu__item-link::before {
-    bottom: 80%;
+@media screen and (max-width: 1690px) {
+p.text {
+    padding: 0 50px;
+    font-size: 18px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
+
 }
 
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1495px) {
+p.text {
+    padding: 0 50px;
+    font-size: 15px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
 .wrapper_rea {
  padding:0 120px;
  }
@@ -507,10 +518,23 @@ div.flex_button
 
 
 
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 1440px) {
+	.menu__item-link::before {
+    bottom: 80%;
+}
+}
+
+
+@media screen and (max-width: 1110px) {
 .wrapper_rea {
- padding:0 60px;
+ padding:0 50px;
  }
+}
+
+
+
+@media screen and (max-width: 900px) {
 
  #one 
 {
@@ -554,6 +578,11 @@ p.add_style
 	font-size: 60px;
 }
 
+p.text {
+    padding: 0 15px;
+    font-size: 12px;
+}
+
 }
 
 
@@ -574,6 +603,14 @@ div.menu-margin
 
 .menu__item-link::before {
     bottom: 70%;
+}
+
+
+p.text {
+    padding: 0 15px;
+    font-size: 10px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 }
@@ -611,6 +648,27 @@ li.skills_list
     	line-height: 23px;
     }
 }
+
+
+p.text {
+    padding: 0 15px;
+    font-size: 10px;
+    margin-top: 1.5vh;
+    margin-bottom: 5vh;
+}
+}
+
+
+@media screen and (max-width: 530px) {
+p.text {
+    padding: 0 5px;
+    font-size: 8px;
+    margin-top: 1.5vh;
+    margin-bottom: 5vh;
+}
+
+
+
 }
 
 @media screen and (max-width: 460px) {
@@ -621,7 +679,7 @@ li.skills_list
 
  div.title {
     margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 2.5vh;
 }
 
 p.description {
@@ -634,6 +692,26 @@ p.description_project {
 
 div.flex_button {
     margin-bottom: -10vh;
+}
+
+div.flex_rea {
+    flex-direction: column;
+}
+
+div.image_container {
+    margin-top: 1.5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+div.title:nth-of-type(2) {
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
+
+p.text {
+    font-size: 12px;
 }
 
 }
@@ -662,4 +740,63 @@ main {
     width: 100vw;
 
 }
+
+
+p.text {
+    font-size: 10px;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 365px) {
+ #one 
+{
+	width: 125px;
+	height: 125px;
+}
+
+#second 
+{
+	width: 125px;
+	height: 125px;
+} 
+
+p.description {
+    font-size: 10px;
+}
+
+p.description_project {
+    font-size: 10px;
+}
+
+h1.title_rea
+{
+	font-size: 50px;
+}
+
+p.add_style
+{
+	font-size: 35px;
+}
+
+li.skills_list
+{
+	font-size: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+ a {
+	font-size: 15px;
+    height: 35px; // = lineheight span + 2*padding du span
+
+    span {
+    	padding: 6px;
+    	line-height: 23px;
+    }
+}
+
 }
