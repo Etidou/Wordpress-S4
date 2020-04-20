@@ -11,6 +11,7 @@ export default class Preloader{
         this.$textdiv = $('div.text_loader');
         this.innerOverlay = $('.preload-overlay .overlay');
         this.$marquee= $('p.add_style_loader');
+         this.$none= $('div.column_loader_left');
 
     }
     initEvents() { 
@@ -72,6 +73,18 @@ export default class Preloader{
                 y: '100%',
                 ease: Power4.easeInOut,
             },'-=1')
+
+            .to(this.$none,0,{
+                display:'none',
+            })
+
+            .to(this.$marquee,0,{
+                display:'none',
+            })
+
+            .to(this.$preloadOverlay, 0, {
+                display:'none',
+            })
 
             .from($('.item-keyword'), 1.5, {
                 y: '-5%',

@@ -35,7 +35,7 @@
 
 <div class="title">
 
-		<marquee behavior="scroll" direction="left" scrollamount="18">	<div class="line">
+		<marquee behavior="scroll" direction="left" scrollamount="45">	<div class="line">
 			<?php echo $email; ?>
 
 			<?php echo $email; ?>
@@ -63,7 +63,7 @@
 		</div>
 
 
-		<marquee behavior="scroll" direction="right" scrollamount="18"><div class="line">
+		<marquee behavior="scroll" direction="right" scrollamount="45"><div class="line">
 			<?php echo $email; ?>
 
 			<?php echo $email; ?>

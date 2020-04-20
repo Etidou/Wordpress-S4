@@ -10,22 +10,6 @@ header
 	overflow: hidden;
 }
 
-h1
-{
-	font-size: 3em;
-	color: green;
-	margin-top: 1.5em;
-}
-
-html
-{
-
-	font-family: 'Montserrat';
-	height: 100vh;
-	background: rgb(240,240,240);
-	
-}
-
 .wrapper {
 	padding:0 240px;
 }
@@ -113,28 +97,7 @@ body {
 	font-family: sofia-pro, sans-serif;
 }
 
-/* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
 
-main::before {
-	animation: grain 8s steps(10) infinite;
-	background-image: url(images/noise.png);
-	content: '';
-	left: -50%;
-
-}
-
-@keyframes grain {
-	0%, 100% { transform:translate(0, 0); }
-	10% { transform:translate(-5%, -10%); }
-	20% { transform:translate(-15%, 5%); }
-	30% { transform:translate(7%, -25%); }
-	40% { transform:translate(-5%, 25%); }
-	50% { transform:translate(-15%, 10%); }
-	60% { transform:translate(15%, 0%); }
-	70% { transform:translate(0%, 15%); }
-	80% { transform:translate(3%, 35%); }
-	90% { transform:translate(-10%, 10%); }
-}
 
 a {
 	text-decoration: none;
@@ -341,7 +304,7 @@ a:focus {
 
 main 
 {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 }
@@ -462,8 +425,29 @@ p.add_style_loader
     }
 }
 
+
+
+
+
+@media only screen and (max-width: 800px) {
+p.add_style_loader
+{
+	font-size: 50px;
+	font-family: $font_Sofia;
+	font-style: italic;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: black;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: white;
+	opacity: 0;
+	margin-bottom: 5vh;
+}
+
+}
 @media only screen and (max-width: 480px) {
 	.preload-overlay {
+		width: 100vw;
 
 		.container {
 
@@ -541,4 +525,6 @@ body {
 a {
 	cursor: url('../../images/cursor.png'), auto;
 }
+
+
 

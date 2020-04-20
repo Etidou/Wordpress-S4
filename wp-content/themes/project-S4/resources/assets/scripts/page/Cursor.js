@@ -195,6 +195,7 @@ linkCursorInteraction() {
    ()=> {
     $('p.add_style').css('opacity','1');
     $('body').css('background-color','black');
+    $('html').css('background-color','black');
     $('h1.title_rea').css('color','white');
     $('li.skills_list').css('color','white');
     $('a').css('color','white');
@@ -209,6 +210,7 @@ linkCursorInteraction() {
     $('p.add_style').css('opacity','0');
     $('h1.title_rea').css('color','red');
     $('body').css('background-color','#f8ecde');
+    $('html').css('background-color','#f8ecde');
     $('li.skills_list').css('color','black');
     $('#one').css('opacity','1');
     $('#second').css('opacity','0');
@@ -221,11 +223,13 @@ linkCursorInteraction() {
     $('a.phone').hover(
    ()=> {
     $('body').css('background-color','black');
+    $('html').css('background-color','black');
     $('a.phone').css('color','white');
      $('h1.title_contact').css('color','white');
   },
   ()=> {
     $('body').css('background-color','#f8ecde');
+    $('html').css('background-color','#f8ecde');
     $('a.phone').css('color','black');
     $('h1.title_contact').css('color','red');
 
@@ -239,6 +243,7 @@ linkCursorInteraction() {
    ()=> {
     $('p.add_style').css('opacity','1');
     $('body').css('background-color','black');
+    $('html').css('background-color','black');
     $('h1.title_contact').css('color','white');
     $('a.phone').css('color','white');
   },
@@ -246,6 +251,7 @@ linkCursorInteraction() {
     $('p.add_style').css('opacity','0');
     $('h1.title_contact').css('color','red');
     $('body').css('background-color','#f8ecde');
+    $('html').css('background-color','#f8ecde');
     $('a.phone').css('color','black');
   }
   )

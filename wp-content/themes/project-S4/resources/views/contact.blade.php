@@ -34,7 +34,7 @@
 
 <div class="title">
 
-		<marquee behavior="scroll" direction="left" scrollamount="18">	<div class="line">
+		<marquee behavior="scroll" direction="left" scrollamount="45">	<div class="line">
 			{!!$email!!}
 			{!!$email!!}
 			{!!$email!!}
@@ -52,7 +52,7 @@
 		</div>
 
 
-		<marquee behavior="scroll" direction="right" scrollamount="18"><div class="line">
+		<marquee behavior="scroll" direction="right" scrollamount="45"><div class="line">
 			{!!$email!!}
 			{!!$email!!}
 			{!!$email!!}

@@ -128,7 +128,6 @@
   <div id="cursor">
       <div></div>
     </div>
-<div class="anim-overlay"></div>
 
     
 <!-- <div class="wrapper"> -->

@@ -29,7 +29,7 @@
 
 
     <main data-barba="container" data-barba-namespace="home">
-<div class="wrapper">
+<div class="wrapper index">
 
 {!!$title!!}
 
