@@ -41,6 +41,7 @@
 					</div>
 				</div>
 				@endforeach
+				@dump($post_reas)
 			</div>
 		</nav>
 	</div>

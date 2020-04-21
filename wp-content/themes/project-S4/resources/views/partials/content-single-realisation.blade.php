@@ -76,7 +76,7 @@
 
 			@if(isset(Single::previousLink()->ID))
 
-			<a href="{{get_permalink(Single::previousLink()->ID)}}">
+			<a href="{{get_permalink(Single::previousLink()->ID)}}" class="previous">
 				<div class="link-realisation-overlay"></div>
 				<span>Projet précédent</span>
 				<span>{{ Single::previousLink()->post_title }}</span>
@@ -84,7 +84,7 @@
 			@endif
 
 			@if(isset(Single::nextLink()->ID))
-			<a href="{{get_permalink(Single::nextLink()->ID)}}">
+			<a href="{{get_permalink(Single::nextLink()->ID)}}" class="next">
 				<div class="link-realisation-overlay"></div>
 				<span>Projet suivant</span>
 				<span>{{ Single::nextLink()->post_title }}</span>

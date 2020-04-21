@@ -103,7 +103,7 @@
 
 			<?php if(isset(Single::previousLink()->ID)): ?>
 
-			<a href="<?php echo e(get_permalink(Single::previousLink()->ID)); ?>">
+			<a href="<?php echo e(get_permalink(Single::previousLink()->ID)); ?>" class="previous">
 				<div class="link-realisation-overlay"></div>
 				<span>Projet précédent</span>
 				<span><?php echo e(Single::previousLink()->post_title); ?></span>
@@ -111,7 +111,7 @@
 			<?php endif; ?>
 
 			<?php if(isset(Single::nextLink()->ID)): ?>
-			<a href="<?php echo e(get_permalink(Single::nextLink()->ID)); ?>">
+			<a href="<?php echo e(get_permalink(Single::nextLink()->ID)); ?>" class="next">
 				<div class="link-realisation-overlay"></div>
 				<span>Projet suivant</span>
 				<span><?php echo e(Single::nextLink()->post_title); ?></span>
