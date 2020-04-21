@@ -143,7 +143,8 @@
 		<a class="link-home_web" href="<?php echo $lien_rea; ?>" target="_blank">
 			<div class="overlay-bottom-realisation_web"></div> 
 			<span></span>
-			<p class="web">Voir le Site</p>
+			<?php echo $voir_le; ?>
+
 		</a>
 	</div>
 
