@@ -84,10 +84,18 @@
 
 		<div class="skills">
 			<ul>
-				<li class="skills_list">ES6</li>
-				<li class="skills_list">Laravel</li>
-				<li class="skills_list">API REST</li>
-				<li class="skills_list">SCSS</li>
+				<?php echo $competences_1; ?>
+
+				<?php echo $competences_2; ?>
+
+				<?php echo $competences_3; ?>
+
+				<?php echo $competences_4; ?>
+
+				<?php echo $competences_5; ?>
+
+				<?php echo $competences_6; ?>
+
 			</ul>
 		</div>
 

@@ -63,10 +63,12 @@
 
 		<div class="skills">
 			<ul>
-				<li class="skills_list">ES6</li>
-				<li class="skills_list">Laravel</li>
-				<li class="skills_list">API REST</li>
-				<li class="skills_list">SCSS</li>
+				{!!$competences_1!!}
+				{!!$competences_2!!}
+				{!!$competences_3!!}
+				{!!$competences_4!!}
+				{!!$competences_5!!}
+				{!!$competences_6!!}
 			</ul>
 		</div>
 
@@ -113,7 +115,7 @@
 		<a class="link-home_web" href="{!!$lien_rea!!}" target="_blank">
 			<div class="overlay-bottom-realisation_web"></div> 
 			<span></span>
-			<p class="web">Voir le Site</p>
+			{!!$voir_le!!}
 		</a>
 	</div>
 
