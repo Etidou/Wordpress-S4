@@ -42,7 +42,6 @@
 					</div>
 				</div>
 				<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-				<?php (new Illuminate\Support\Debug\Dumper)->dump($post_reas); ?>
 			</div>
 		</nav>
 	</div>

@@ -51,6 +51,20 @@ a.link
 	}
 }
 
+@media screen and (max-width: 1610px) {
+h1.title {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+}
+
+
+@media screen and (max-width: 1550px) {
+p.presentation {
+    margin-bottom: 50px;
+}
+}
 
 @media screen and (max-width: 1460px) {
 
@@ -152,19 +166,19 @@ a.link
 
 	p.presentation 
 	{
-		font-size: 15px;
-		margin-bottom: 30px;
+		font-size: 17px;
+		margin-bottom: 100px;
 		line-height: 1.2;
 	}
 	a.link 
 	{
-		font-size: 15px;
+		font-size: 17px;
 	}
 
 	p.anecdote 
 	{
-		font-size: 12px;
-		margin-bottom: 20px;
+		font-size: 14px;
+		margin-bottom: 50px;
 	}
 
 	div.wrapper{
@@ -183,4 +197,17 @@ a.link
 	}
 
 
+}
+
+@media screen and (max-width: 375px) {
+p.anecdote 
+	{
+		margin-bottom: 30px;
+	}
+
+	p.presentation 
+	{
+		margin-bottom: 50px;
+		line-height: 1.3;
+	}
 }

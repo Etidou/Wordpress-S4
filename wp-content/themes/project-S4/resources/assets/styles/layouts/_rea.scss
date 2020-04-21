@@ -516,7 +516,7 @@ p.text {
 @media screen and (max-width: 1495px) {
 p.text {
     padding: 0 50px;
-    font-size: 15px;
+    font-size: 18px;
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
@@ -590,7 +590,7 @@ p.add_style
 
 p.text {
     padding: 0 15px;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 }
@@ -661,10 +661,7 @@ li.skills_list
 
 
 p.text {
-    padding: 0 15px;
-    font-size: 10px;
-    margin-top: 1.5vh;
-    margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 }
 
@@ -672,9 +669,7 @@ p.text {
 @media screen and (max-width: 530px) {
 p.text {
     padding: 0 5px;
-    font-size: 8px;
-    margin-top: 1.5vh;
-    margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 
@@ -722,6 +717,8 @@ div.title:nth-of-type(2) {
 
 p.text {
     font-size: 12px;
+    text-align: center;
+padding: 0 50px;
 }
 
 }
