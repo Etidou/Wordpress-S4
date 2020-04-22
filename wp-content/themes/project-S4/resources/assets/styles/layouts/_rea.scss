@@ -671,9 +671,12 @@ p.text {
     padding: 0 5px;
     margin-top: 5vh;
 }
+}
 
-
-
+@media screen and (max-width: 500px) {
+	html,body,div.wrapper_rea {
+		overflow-x: hidden!important;
+	}
 }
 
 @media screen and (max-width: 460px) {
@@ -732,7 +735,7 @@ padding: 0 50px;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
-    --item-font-size: 70px;
+    --item-font-size: 50px;
 }
 
 .wrapper_rea {
@@ -753,7 +756,10 @@ p.text {
     font-size: 10px;
 }
 
-
+.menu__item-link,
+.marquee span {
+	padding: 0 3vw;
+}
 }
 
 
@@ -807,3 +813,5 @@ li.skills_list
 }
 
 }
+
+

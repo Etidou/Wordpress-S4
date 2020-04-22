@@ -19,50 +19,50 @@
     </ul>
 
 <div class="line_loader">
-   <marquee behavior="scroll" direction="right" loop="3"  scrollamount="150"> 
+   <marquee behavior="scroll" direction="right" loop="2"  scrollamount="150"> 
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
        </marquee>
 </div>
 <div class="line_loader">
-    <marquee behavior="scroll" direction="left" loop="3"  scrollamount="150">  
+    <marquee behavior="scroll" direction="left" loop="2"  scrollamount="150">  
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
       </marquee>
 </div>
 <div class="line_loader">
-   <marquee behavior="scroll" direction="right" loop="3"  scrollamount="150"> 
+   <marquee behavior="scroll" direction="right" loop="2"  scrollamount="150"> 
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
        </marquee>
 </div>
 <div class="line_loader">
-    <marquee behavior="scroll" direction="left"  loop="3" scrollamount="125">  
+    <marquee behavior="scroll" direction="left"  loop="2" scrollamount="125">  
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
       </marquee>
 </div>
 <div class="line_loader">
-   <marquee behavior="scroll" direction="right" loop="3"  scrollamount="150"> 
+   <marquee behavior="scroll" direction="right" loop="2"  scrollamount="150"> 
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
        </marquee>
 </div>
 
 
 <div class="column_loader_left">
-    <marquee behavior="scroll" direction="left" loop="3"  scrollamount="150">  
+    <marquee behavior="scroll" direction="left" loop="2"  scrollamount="150">  
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
       </marquee>
 </div>
 <div class="column_loader_right">
-   <marquee behavior="scroll" direction="right"  loop="3" scrollamount="150"> 
+   <marquee behavior="scroll" direction="right"  loop="2" scrollamount="150"> 
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
        </marquee>
 </div>
 
 <div class="line_loader">
-    <marquee behavior="scroll" direction="left" loop="3"  scrollamount="125">  
+    <marquee behavior="scroll" direction="left" loop="2"  scrollamount="125">  
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
       </marquee>
 </div>
 <div class="line_loader">
-   <marquee behavior="scroll" direction="right"  loop="3" scrollamount="150"> 
+   <marquee behavior="scroll" direction="right"  loop="2" scrollamount="150"> 
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
        </marquee>
 </div>
@@ -77,49 +77,49 @@
       </div> 
 
 <div class="line_loader">
-   <marquee behavior="scroll" direction="left" loop="3"  scrollamount="150"> 
+   <marquee behavior="scroll" direction="left" loop="2"  scrollamount="150"> 
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
        </marquee>
 </div>
 <div class="line_loader">
-    <marquee behavior="scroll" direction="right"  loop="3" scrollamount="150">  
+    <marquee behavior="scroll" direction="right"  loop="2" scrollamount="150">  
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
       </marquee>
 </div>
 <div class="line_loader">
-   <marquee behavior="scroll" direction="left"  loop="3" scrollamount="150"> 
+   <marquee behavior="scroll" direction="left"  loop="2" scrollamount="150"> 
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
        </marquee>
 </div>
 <div class="line_loader">
-    <marquee behavior="scroll" direction="right" loop="3"  scrollamount="125">  
+    <marquee behavior="scroll" direction="right" loop="2"  scrollamount="125">  
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
       </marquee>
 </div>
 <div class="line_loader">
-   <marquee behavior="scroll" direction="left"  loop="3" scrollamount="100"> 
+   <marquee behavior="scroll" direction="left"  loop="2" scrollamount="100"> 
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
        </marquee>
 </div> 
 
 <div class="column_loader_left_second">
-    <marquee behavior="scroll" direction="left"  loop="3" scrollamount="150">  
+    <marquee behavior="scroll" direction="left"  loop="2" scrollamount="150">  
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
       </marquee>
 </div>
 <div class="column_loader_right_second">
-   <marquee behavior="scroll" direction="right" loop="3"  scrollamount="150"> 
+   <marquee behavior="scroll" direction="right" loop="2"  scrollamount="150"> 
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
        </marquee>
 </div>  
 
 <div class="line_loader">
-    <marquee behavior="scroll" direction="left" loop="3"  scrollamount="125">  
+    <marquee behavior="scroll" direction="left" loop="2"  scrollamount="125">  
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
       </marquee>
 </div>
 <div class="line_loader">
-   <marquee behavior="scroll" direction="right" loop="3"  scrollamount="150"> 
+   <marquee behavior="scroll" direction="right" loop="2"  scrollamount="150"> 
       <p class="add_style_loader">Etienne Pharabot développeur Full Stack Etienne Pharabot développeur Full Stack</p>
        </marquee>
 </div>

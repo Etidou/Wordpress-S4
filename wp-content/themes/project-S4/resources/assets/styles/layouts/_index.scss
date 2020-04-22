@@ -199,6 +199,13 @@ p.presentation {
 
 }
 
+
+@media screen and (max-width: 500px) {
+	html,body,div.wrapper {
+		overflow-x: hidden!important;
+	}
+}
+
 @media screen and (max-width: 375px) {
 p.anecdote 
 	{
@@ -209,5 +216,9 @@ p.anecdote
 	{
 		margin-bottom: 50px;
 		line-height: 1.3;
+	}
+
+	body {
+		overflow-x: hidden;
 	}
 }

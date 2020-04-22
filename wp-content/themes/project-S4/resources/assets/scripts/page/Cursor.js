@@ -119,7 +119,7 @@ linkCursorInteraction() {
     )
 
 
-    $('a.link-click,a.link-home_web').hover(
+    $('a.link-click,a.link-home_web,a.link-home').hover(
    ()=> {
     TweenMax.to(this.$cursor, 0.5, {
      scale: 1.5,
@@ -177,7 +177,7 @@ linkCursorInteraction() {
                     // this.$cursor.css('display','block');
     this.$cursor.css('background-color','black');
     this.$cursor.css('color','white');
-    this.$cursor.text('précédent');
+    this.$cursor.text('Précédent');
 
     },
     ()=> {

@@ -189,7 +189,7 @@ a:focus {
 .menu__item-link:hover {
 	transition-duration: 0.1s;
 	opacity: 0;
-	cursor: url('../../images/cursor.png'), auto;
+	cursor: url('../images/cursor.png'), auto;
 }
 
 .menu__item-img {
@@ -207,7 +207,7 @@ a:focus {
 	opacity: 1;
 	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
 	transition: all 0.4s;
-	cursor: url('../../images/cursor.png'), auto;
+	cursor: url('../images/cursor.png'), auto;
 }
 
 /* Make sure 3 items are visible in the viewport by setting suitable font size. */
@@ -516,14 +516,14 @@ p.add_style_loader
 
 body {
 	background-color: #F2F2F2;
-	cursor: url('../../images/cursor.png'), auto;
+	cursor: url('../images/cursor.png'), auto;
 }
 
 
 
 
 a {
-	cursor: url('../../images/cursor.png'), auto;
+	cursor: url('../images/cursor.png'), auto;
 }
 
 

@@ -11,7 +11,7 @@ export default class Preloader{
         this.$textdiv = $('div.text_loader');
         this.innerOverlay = $('.preload-overlay .overlay');
         this.$marquee= $('p.add_style_loader');
-         this.$none= $('div.column_loader_left');
+        this.$none= $('div.column_loader_left');
 
     }
     initEvents() { 
@@ -27,60 +27,74 @@ export default class Preloader{
             $('#feature').text('et')
             let tl = new TimelineMax();
             tl
-            .staggerTo(this.$textContainerOverlay, 2, {
+            .staggerTo(this.$textContainerOverlay, 1, {
                 y: '0%',
                 stagger: 0.8,
                 ease: Expo.easeOut,
             }, '+=0.1')
 
-            .to(this.$textdiv, 1, {
+            .to(this.$textdiv, 0.5, {
                 rotation:-3,
                 ease: Expo.easeOut,
             }, '+=0.1')
 
             .to(this.$preloadOverlay, 0, {
-               backgroundColor:'#f8ecde',
-               y: '0%',
-               ease: Power4.easeInOut,
-           })
+             backgroundColor:'#f8ecde',
+             y: '0%',
+             ease: Power4.easeInOut,
+         })
 
-            .to(this.$textContainerOverlay, 0.5, {
+            .to(this.$textContainerOverlay, 0.25, {
                 color:'#ffffff',
             })
 
-            .to(this.$preloadOverlay, 0.5, {
-               backgroundColor:'#000000',
-               y: '0%',
-               ease: Power4.easeInOut,
-           })
+            .to(this.$preloadOverlay, 0.25, {
+             backgroundColor:'#000000',
+             y: '0%',
+             ease: Power4.easeInOut,
+         })
 
-            .to(this.$marquee, 1, {
+            .to(this.$marquee, 0.5, {
                 opacity:1,
             })
 
-            .to(this.$preloadOverlay, 5, {
-               backgroundColor:'#000000',
-               y: '0%',
-               ease: Power4.easeInOut,
-           },'-=0.2')
+            .to(this.$preloadOverlay, 4.5, {
+             backgroundColor:'#000000',
+             y: '0%',
+             ease: Power4.easeInOut,
+         },'-=0.2')
 
-            .to(this.$marquee, 0.1, {
+            .to(this.$marquee, 0.05, {
                 opacity:0,
             })
 
-            .to(this.$preloadOverlay, 2.5, {
+
+            .to(this.$marquee,0.05,{
+                display:'none',
+            })
+
+
+
+            .to(this.$preloadOverlay, 1, {
                 backgroundColor:'#f8ecde',
                 y: '100%',
                 ease: Power4.easeInOut,
-            },'-=1')
+            })
 
+            .to(this.$marquee, 0.05, {
+                opacity:0,
+            })
+
+
+            .to(this.$marquee,0.05,{
+                display:'none',
+            })
+
+            
             .to(this.$none,0,{
                 display:'none',
             })
-
-            .to(this.$marquee,0,{
-                display:'none',
-            })
+            
 
             .to(this.$preloadOverlay, 0, {
                 display:'none',
