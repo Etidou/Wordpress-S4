@@ -5,14 +5,6 @@
 ?>
 
 
-<ul class="transition">
-
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-</ul>
 
 <?php $__env->startSection('content'); ?>
 

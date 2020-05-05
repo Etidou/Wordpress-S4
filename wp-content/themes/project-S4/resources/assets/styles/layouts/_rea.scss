@@ -764,7 +764,7 @@ p.text {
 
 
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 385px) {
  #one 
 {
 	width: 125px;
@@ -783,6 +783,18 @@ p.description {
 
 p.description_project {
     font-size: 10px;
+}
+a.link-click
+{
+	font-size: 10px;
+}
+
+a.link-foot
+{
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: underline;
+
 }
 
 h1.title_rea

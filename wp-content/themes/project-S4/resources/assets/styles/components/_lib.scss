@@ -33,3 +33,50 @@ ul.transition li:nth-of-type(2n){
   background:#f8ecde;
   transform: scaleY(0);
 }
+
+
+.transi-container
+{
+  background-color: $color-bg;
+  height:100%;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  display: block;
+  position: fixed;
+  z-index: 0;
+  opacity: 0;
+
+}
+
+
+
+.left_container_transi
+{
+  position: fixed;
+  height:100%;
+  width: 50%;
+  z-index: 200;
+  background-color:black;
+  display: block;
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  opacity: 0;
+  z-index: 0;
+} 
+
+.right_container_transi
+{
+  position: fixed;
+  height:100%;
+  width: 50%;
+  z-index: 200;
+  background-color:red;
+  display: block;
+  bottom: 0;
+  right: 0;
+  transform: scaleY(-100%);
+  opacity: 0;
+  z-index: 0;
+}

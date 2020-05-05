@@ -131,7 +131,7 @@
 
     
 <!-- <div class="wrapper"> -->
-
+@include('partials.transition')  
         @yield('content')
 <!-- </div> -->
   @php do_action('get_footer') @endphp

@@ -131,7 +131,7 @@
 
     
 <!-- <div class="wrapper"> -->
-
+<?php echo $__env->make('partials.transition', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>  
         <?php echo $__env->yieldContent('content'); ?>
 <!-- </div> -->
   <?php do_action('get_footer') ?>
