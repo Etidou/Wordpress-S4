@@ -43,21 +43,9 @@ $('a.menu__item-link_hover').click(function(){
 
     function pageTransition() { 
 
-	var tl = gsap.timeline();
-
-
-	tl.to('.left_container_transi', { duration: .00000001, backgroundColor:'#000000'})
-	tl.to('.right_container_transi', { duration: .000000001, backgroundColor:'#ff0000'})
-
-	tl.to('.transi-container', { duration: .1, zIndex:10, opacity:1, stagger: .05})
-
-	tl.to('.transi-container div', { duration: .000000001,opacity:1, zIndex:200, stagger: .05})
-
-	tl.to('.transi-container div', { duration: 1, scaleY: 1, stagger: .5})
-
-	tl.to('.transi-container div', { duration: 1,zIndex:0, scaleY: 0, backgroundColor:'#f8ecde'})
-
-	tl.to('.transi-container', { duration: 0.1, zIndex:0, opacity:0})
+	var tl = gsap.timeline();	
+	tl.to('ul.transition li', { duration: .5, scaleY: 1, transformOrigin: 'bottom left', stagger: .05})
+	tl.to('ul.transition li', { duration: .5, scaleY: 0, transformOrigin: 'bottom left', stagger: .05,delay: .1})
 }
 
 
