@@ -1,7 +1,8 @@
-<div class="transi-container">
-  <div class=left_container_transi>
-  </div>
+<ul class="transition">
 
-  <div class=right_container_transi>
-  </div>
-</div>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
