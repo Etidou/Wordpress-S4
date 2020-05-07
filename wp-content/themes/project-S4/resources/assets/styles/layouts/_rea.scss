@@ -293,20 +293,25 @@ li.skills_list
 	color: black;
 	font-family: $font_Karla;
 	list-style-type: disc;
+	text-align: center;
 	margin-left: 20px;
 	margin-right: 20px;
-	text-align: center;
+	padding-left: 10px;
 }
 
 li:first-of-type
 {
 	list-style-type: none;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 ul 
 {
 	width: 100%;
 	justify-content: center;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 div.skills
